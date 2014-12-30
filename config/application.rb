@@ -5,6 +5,7 @@ require 'rails/all'
 require 'willow'
 Willow.require_everything
 #require 'clientspecific'
+require ENV['CLIENT_SPECIFIC_GEM_NAME'] if ENV['CLIENT_SPECIFIC_GEM_NAME']
 
 unless Object.const_defined?('ClientConfiguration')
   class ClientConfiguration
@@ -48,5 +49,10 @@ module ConduitBryan
     if ENV["FILEPICKER_API_KEY"]
       config.filepicker_rails.api_key = ENV["FILEPICKER_API_KEY"]
     end
+
+    if gem = ENV['CLIENT_SPECIFIC_GEM_NAME']
+      config.paths['db/migrate'] << "#{`bundle show #{gem}`.strip}/db/migrate"
+    end
+
   end
 end
