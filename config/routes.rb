@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   match '/get_license_key'                                               => 'student_overview#get_license_key', :via => [:post]
   match '/set_license_key'                                               => 'student_overview#set_license_key', :via => [:post]
   engines = [Willow::Engine,
-             (Object.const_defined?('Clientspecific') && Object.const_defined?('Clientspecific::Engine') ? Clientspecific::Engine : nil)]
+             (Object.const_defined?('Clientspecific') ? Clientspecific::Engine : nil)]
 
   engines.select { |x| x }.each { |e| mount e, at: '/' }
 
