@@ -1,0 +1,14 @@
+source 'https://rubygems.org'
+
+# Specify your gem's dependencies in leads_360.gemspec
+gemspec
+
+gem 'nokogiri'
+
+gem 'minitest'
+group :development, :test, :testing do
+  gem 'guard'
+  gem 'guard-minitest', :git => 'git://github.com/aspiers/guard-minitest.git'
+  gem 'ruby_gntp'
+  gem 'fakeweb'
+end

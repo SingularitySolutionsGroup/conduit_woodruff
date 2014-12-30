@@ -1,0 +1,50 @@
+ .form_header div .logo {
+    margin-left: 10px;
+     padding-top: 7px;
+ }
+  .form_header .logo_container {
+    height: 46px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-left: 6px;
+    padding-right: 8px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+ }
+
+  .login-logo-container {
+    padding-left: 16px !important;
+  }
+  .account_activation_logo_container {
+      background-color: #ffffff;
+  }
+  .secondary-logo-container {
+    background-color: #ffffff;
+    background-image: none !important;
+    padding-left: 31px;
+  }
+  .main_logo_container {
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    height: 40px;
+    display: inline-block;
+    background-color: #ffffff;
+  }
+@media print { 
+	.form-header-text {
+		color: #ffffff !important;
+	}
+	.form-header-text h4 b {
+		color: #ffffff !important;
+	}
+	.form-header-text h4 {
+		color: #ffffff !important;
+		margin-right: 10px;
+	}
+
+}

@@ -1,0 +1,484 @@
+<form novalidate="" name="the_form" style="padding:10px;">
+    <div class="row" ng-show="message!=''">
+        <strong class="col-xs-12 {{message_class}}">{{message}}</strong>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label for="name">Name</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" ng-model="collection_item.name" id="name" name="name" class="form-control" required class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.name.$error.required">Please enter a name</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label for="name">Friendly Name</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" ng-model="collection_item.friendly_name" id="friendly_name" name="friendly_name" class="form-control" required class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.friendly_name.$error.required">Please enter a friendly name</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label for="interview_guide_id">Interview Guide ID</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" ng-model="collection_item.interview_guide_id" id="interview_guide_id" name="interview_guide_id" class="form-control" required class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.interview_guide_id.$error.required">Please enter an ID</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label for="total_cost">Total Cost</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" ng-model="collection_item.total_cost" id="total_cost" name="total_cost" class="form-control" class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.total_cost.$error.required">Please enter a total cost</span>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-2">
+          <label for="estimated_completion_date">Estimated Completion Date</label>
+        </div>
+        <div class="col-md-10">
+          <input type="text" ng-model="collection_item.estimated_completion_date" id="estimated_completion_date" name="estimated_completion_date" class="form-control" class="input-medium form-control" />
+          <span class="error" ng-show="!the_form.$pristine && the_form.estimated_completion_date.$error.required">Please enter a Estimated Completion Date</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <label for="name">Award Year</label>
+        </div>
+        <div class="col-md-2">
+            <input type="text" ng-model="collection_item.award_year" id="award_year" name="award_year" class="form-control" class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.award_year.$error.required">Please enter an award year</span>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <label for="credits">Anticipated Start Date</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.anticipated_start_date" id="anticipated_start_date" name="anticipated_start_date" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.anticipated_start_date.$error.required">Please enter the anticipated start date</span>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <label for="credits">Credits</label>
+        </div>
+        <div class="col-md-2">
+            <label for="weeks">Weeks</label>
+        </div>
+        <div class="col-md-2">
+            <label for="months">Months</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <input type="text" ng-model="collection_item.credits" id="credits" name="credits" class="form-control" class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.credits.$error.required">Please enter the credits</span>
+        </div>
+        <div class="col-md-2">
+            <input type="text" ng-model="collection_item.weeks" id="weeks" name="weeks" class="form-control" class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.weeks.$error.required">Please enter the weeks</span>
+        </div>
+        <div class="col-md-2">
+            <input type="text" ng-model="collection_item.months" id="months" name="months" class="form-control" class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.months.$error.required">Please enter the months</span>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <label for="application_fee">Application Fee</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.application_fee" id="application_fee" name="application_fee" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.application_fee.$error.required">Please enter the Application Fee</span>
+      </div>
+      <div class="col-md-2">
+        <label for="resource_fee">Resource Fee</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.resource_fee" id="resource_fee" name="resource_fee" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.resource_fee.$error.required">Please enter the Resource Fee</span>
+      </div>
+      <div class="col-md-2">
+        <label for="course_transfer_fee">Course Transfer Fee</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.course_transfer_fee" id="course_transfer_fee" name="course_transfer_fee" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.course_transfer_fee.$error.required">Please enter the Course Transfer Fee</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <label for="tuition_fee">Tuition Fee</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.tuition_fee" id="tuition_fee" name="tuition_fee" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.tuition_fee.$error.required">Please enter the Tuition Fee</span>
+      </div>
+      <div class="col-md-2">
+        <label for="tech_dev_fee">Technology Device Fee</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.tech_dev_fee" id="tech_dev_fee" name="tech_dev_fee" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.tech_dev_fee.$error.required">Please enter the Technology Device Fee</span>
+      </div>
+      <div class="col-md-2">
+        <label for="program_transfer_fee">Program Transfer Fee</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.program_transfer_fee" id="program_transfer_fee" name="program_transfer_fee" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.program_transfer_fee.$error.required">Please enter the Program Transfer Fee</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <label for="book_fee">Book Fee</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.book_fee" id="book_fee" name="book_fee" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.book_fee.$error.required">Please enter the Book Fee</span>
+      </div>
+      <div class="col-md-2">
+        <label for="graduation_fee">Graduation Fee</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.graduation_fee" id="graduation_fee" name="graduation_fee" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.graduation_fee.$error.required">Please enter the Graduation Fee</span>
+      </div>
+      <div class="col-md-2">
+        <label for="program_change_fee">Program Change Fee</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.program_change_fee" id="program_change_fee" name="program_change_fee" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.program_change_fee.$error.required">Please enter the Program Change Fee</span>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <label for="tech_fee">Technology Fee</label>
+        </div>
+        <div class="col-md-2">
+            <input type="text" ng-model="collection_item.tech_fee" id="tech_fee" name="tech_fee" class="form-control" class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.tech_fee.$error.required">Please enter the Tech Fee</span>
+        </div>
+        <div class="col-md-2">
+            <label for="transcript_fee">Transcript Fee</label>
+        </div>
+        <div class="col-md-2">
+            <input type="text" ng-model="collection_item.transcript_fee" id="transcript_fee" name="transcript_fee" class="form-control" class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.transcript_fee.$error.required">Please enter the Transcript Fee</span>
+        </div>
+        <div class="col-md-2">
+            <label for="reentry_fee">Re-Entry Fee</label>
+        </div>
+        <div class="col-md-2">
+            <input type="text" ng-model="collection_item.reentry_fee" id="reentry_fee" name="reentry_fee" class="form-control" class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.reentry_fee.$error.required">Please enter the Re-Entry Fee</span>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        &nbsp;
+      </div>
+      <div class="col-md-2">
+        <label for="other_amount">Other</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.other_amount" id="other_amount" name="other_amount" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.other_amount.$error.required">Please enter the Other Amount</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        &nbsp;
+      </div>
+      <div class="col-md-2">
+        <label for="total_amount">Total</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.total_amount" id="total_amount" name="total_amount" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.total_amount.$error.required">Please enter the Total Amount</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        &nbsp;
+      </div>
+      <div class="col-md-2">
+        <label for="less_application_fee">Less Application Fee</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.less_application_fee" id="less_application_fee" name="less_application_fee" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.less_application_fee.$error.required">Please enter the Application Fee</span>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        &nbsp;
+      </div>
+      <div class="col-md-2">
+        <label for="balance_due">Balance Due</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.balance_due" id="balance_due" name="balance_due" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.balance_due.$error.required">Please enter the Other Amount</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <label>Federal Pell Grant</label><br/>
+      </div>
+      <div class="col-md-2">
+        <label>Federal Subsidized Loan</label>
+      </div>
+      <div class="col-md-2">
+        <label>Federal Unsubsidized Loan</label>
+      </div>
+      <div class="col-md-2">
+        <label>Federal PLUS Loan</label>
+      </div>
+      <div class="col-md-2">
+        <label>Other</label>
+      </div>
+      <div class="col-md-2">
+        <label>Total</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_1_pell" id="award_year_1_pell" name="award_year_2_pell" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_2_pell.$error.required">Please enter the award_year_2_pell</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_1_sub" id="award_year_1_sub" name="award_year_1_sub" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_1_sub.$error.required">Please enter the award_year_1_sub</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_1_unsub" id="award_year_1_unsub" name="award_year_1_unsub" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_1_unsub.$error.required">Please enter the award_year_1_unsub</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_1_plus" id="award_year_1_plus" name="award_year_1_plus" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_1_plus.$error.required">Please enter the award_year_1_plus</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_1_other" id="award_year_1_other" name="award_year_1_other" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_1_other.$error.required">Please enter the award_year_1_other</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_1_total" id="award_year_1_total" name="award_year_1_total" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_1_total.$error.required">Please enter the award_year_1_total</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_2_pell" id="award_year_2_pell" name="award_year_2_pell" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_2_pell.$error.required">Please enter the award_year_2_pell</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_2_sub" id="award_year_2_sub" name="award_year_2_sub" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_2_sub.$error.required">Please enter the award_year_2_sub</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_2_unsub" id="award_year_2_unsub" name="award_year_2_unsub" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_2_unsub.$error.required">Please enter the award_year_2_unsub</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_2_plus" id="award_year_2_plus" name="award_year_2_plus" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_2_plus.$error.required">Please enter the award_year_2_plus</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_2_other" id="award_year_2_other" name="award_year_2_other" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_2_other.$error.required">Please enter the award_year_2_other</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_2_total" id="award_year_2_total" name="award_year_2_total" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_2_total.$error.required">Please enter the award_year_2_total</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_3_pell" id="award_year_3_pell" name="award_year_2_pell" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_2_pell.$error.required">Please enter the award_year_2_pell</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_3_sub" id="award_year_3_sub" name="award_year_3_sub" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_3_sub.$error.required">Please enter the award_year_3_sub</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_3_unsub" id="award_year_3_unsub" name="award_year_3_unsub" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_3_unsub.$error.required">Please enter the award_year_3_unsub</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_3_plus" id="award_year_3_plus" name="award_year_3_plus" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_3_plus.$error.required">Please enter the award_year_3_plus</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_3_other" id="award_year_3_other" name="award_year_3_other" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_3_other.$error.required">Please enter the award_year_3_other</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_3_total" id="award_year_3_total" name="award_year_3_total" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_3_total.$error.required">Please enter the award_year_3_total</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_4_pell" id="award_year_4_pell" name="award_year_2_pell" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_2_pell.$error.required">Please enter the award_year_2_pell</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_4_sub" id="award_year_4_sub" name="award_year_4_sub" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_4_sub.$error.required">Please enter the award_year_4_sub</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_4_unsub" id="award_year_4_unsub" name="award_year_4_unsub" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_4_unsub.$error.required">Please enter the award_year_4_unsub</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_4_plus" id="award_year_4_plus" name="award_year_4_plus" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_4_plus.$error.required">Please enter the award_year_4_plus</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_4_other" id="award_year_4_other" name="award_year_4_other" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_4_other.$error.required">Please enter the award_year_4_other</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_4_total" id="award_year_4_total" name="award_year_4_total" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_4_total.$error.required">Please enter the award_year_4_total</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_5_pell" id="award_year_5_pell" name="award_year_2_pell" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_2_pell.$error.required">Please enter the award_year_2_pell</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_5_sub" id="award_year_5_sub" name="award_year_5_sub" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_5_sub.$error.required">Please enter the award_year_5_sub</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_5_unsub" id="award_year_5_unsub" name="award_year_5_unsub" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_5_unsub.$error.required">Please enter the award_year_5_unsub</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_5_plus" id="award_year_5_plus" name="award_year_5_plus" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_5_plus.$error.required">Please enter the award_year_5_plus</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_5_other" id="award_year_5_other" name="award_year_5_other" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_5_other.$error.required">Please enter the award_year_5_other</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_5_total" id="award_year_5_total" name="award_year_5_total" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_5_total.$error.required">Please enter the award_year_5_total</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_6_pell" id="award_year_6_pell" name="award_year_2_pell" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_2_pell.$error.required">Please enter the award_year_2_pell</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_6_sub" id="award_year_6_sub" name="award_year_6_sub" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_6_sub.$error.required">Please enter the award_year_6_sub</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_6_unsub" id="award_year_6_unsub" name="award_year_6_unsub" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_6_unsub.$error.required">Please enter the award_year_6_unsub</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_6_plus" id="award_year_6_plus" name="award_year_6_plus" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_6_plus.$error.required">Please enter the award_year_6_plus</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_6_other" id="award_year_6_other" name="award_year_6_other" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_6_other.$error.required">Please enter the award_year_6_other</span>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_6_total" id="award_year_6_total" name="award_year_6_total" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_6_total.$error.required">Please enter the award_year_6_total</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <label>Year 1 Other Fund Source</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_1_other_fund_source" id="award_year_1_other_fund_source" name="award_year_1_other_fund_source" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_1_other_fund_source.$error.required">Please enter the award_year_1_other_fund_source</span>
+      </div>
+      <div class="col-md-2">
+        <label>Year 1 Other Fund Amount</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_1_other_fund_amount" id="award_year_1_other_fund_amount" name="award_year_1_other_fund_amount" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_1_other_fund_amount.$error.required">Please enter the award_year_1_other_fund_amount</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <label>Year 2 Other Fund Source</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_2_other_fund_source" id="award_year_2_other_fund_source" name="award_year_2_other_fund_source" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_2_other_fund_source.$error.required">Please enter the award_year_2_other_fund_source</span>
+      </div>
+      <div class="col-md-2">
+        <label>Year 2 Other Fund Amount</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_2_other_fund_amount" id="award_year_2_other_fund_amount" name="award_year_2_other_fund_amount" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_2_other_fund_amount.$error.required">Please enter the award_year_2_other_fund_amount</span>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <label>Year 3 Other Fund Source</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_3_other_fund_source" id="award_year_3_other_fund_source" name="award_year_3_other_fund_source" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_3_other_fund_source.$error.required">Please enter the award_year_3_other_fund_source</span>
+      </div>
+      <div class="col-md-2">
+        <label>Year 3 Other Fund Amount</label>
+      </div>
+      <div class="col-md-2">
+        <input type="text" ng-model="collection_item.award_year_3_other_fund_amount" id="award_year_3_other_fund_amount" name="award_year_3_other_fund_amount" class="form-control" class="input-medium form-control" />
+        <span class="error" ng-show="!the_form.$pristine && the_form.award_year_3_other_fund_amount.$error.required">Please enter the award_year_3_other_fund_amount</span>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <button ng-click="save(collection_item, the_form)" ng-disabled="!the_form.$valid" class="btn btn-primary" type="button">Save</button>
+            <button ng-click="delete(collection_item)" class="btn btn-danger" type="button">Delete</button>
+            <button ng-click="cancel()" class="btn pull-right" type="button">Cancel</button>
+        </div>
+    </div>
+</form>

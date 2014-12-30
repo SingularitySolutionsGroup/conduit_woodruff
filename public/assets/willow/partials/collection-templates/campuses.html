@@ -1,0 +1,47 @@
+<form novalidate="" name="the_form" style="padding:10px;">
+    <div class="row" ng-show="message!=''">
+        <strong class="col-xs-12 {{message_class}}">{{message}}</strong>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label for="name">Name</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" ng-model="collection_item.name" id="name" name="name" class="form-control" required class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.name.$error.required">Please enter a name</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label for="school_code">School Code</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" ng-model="collection_item.school_code" id="school_code" name="school_code" class="form-control" required class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.school_code.$error.required">Please enter a school code</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label for="name">Phone</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" ng-model="collection_item.phone" id="phone" name="phone" class="form-control" required class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.phone.$error.required">Please enter a phone</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label for="financial_aid_notification_group">Financial Aid Notification Group</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" ng-model="collection_item.financial_aid_notification_group" id="financial_aid_notification_group" name="financial_aid_notification_group" class="form-control" class="input-medium form-control" /><span class="error" ng-show="!the_form.$pristine && the_form.financial_aid_notification_group.$error.required">Please enter a total cost</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button ng-click="save(collection_item, the_form)" ng-disabled="!the_form.$valid" class="btn btn-primary" type="button">Save</button>
+            <button ng-click="delete(collection_item)" class="btn btn-danger" type="button">Delete</button>
+            <button ng-click="cancel()" class="btn pull-right" type="button">Cancel</button>
+        </div>
+    </div>
+</form>

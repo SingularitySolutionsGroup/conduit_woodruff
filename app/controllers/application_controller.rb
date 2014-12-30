@@ -1,0 +1,2 @@
+class ApplicationController < WillowController
+end

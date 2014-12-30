@@ -1,0 +1,34 @@
+<form novalidate="" name="the_form" style="padding:10px;">
+    <div class="row" ng-show="message!=''">
+        <strong class="col-xs-12 {{message_class}}">{{message}}</strong>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label for="name">Name</label>
+        </div>
+        <div class="col-md-10">
+            <input type="text" ng-model="collection_item.name" id="name" name="name" class="form-control" required class="input-medium form-control" />
+            <span class="error" ng-show="!the_form.$pristine && the_form.name.$error.required">Please enter a name</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <label for="externship">Show Externship?</label>
+        </div>
+        <div class="col-md-10">
+            <select ng-model="collection_item.externship">
+              <option value="">- select -</option>
+              <option value="true">Yes</option>
+              <option value="false">No</option>
+            </select>
+            <span class="error" ng-show="!the_form.$pristine && the_form.externship.$error.required">Please enter a externship</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button ng-click="save(collection_item, the_form)" ng-disabled="!the_form.$valid" class="btn btn-primary" type="button">Save</button>
+            <button ng-click="delete(collection_item)" class="btn btn-danger" type="button">Delete</button>
+            <button ng-click="cancel()" class="btn pull-right" type="button">Cancel</button>
+        </div>
+    </div>
+</form>
