@@ -5,7 +5,7 @@ ActiveSupport.on_load(:active_record) do
   end
 end
 Devise.setup do |config|
-  #config.secret_key = ENV['DEVISE_SECRET_KEY'] || SecureRandom.hex
+  config.secret_key = ENV['DEVISE_SECRET_KEY'] || SecureRandom.hex
   config.case_insensitive_keys = [:email, :username]
   config.authentication_keys = [ :login ]
   config.password_length = 4..128
