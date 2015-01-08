@@ -4,8 +4,7 @@ require 'rails/all'
 
 require 'willow'
 Willow.require_everything
-#require 'clientspecific'
-require ENV['CLIENT_SPECIFIC_GEM_NAME'] if ENV['CLIENT_SPECIFIC_GEM_NAME']
+require 'clientspecific' if ENV['CLIENT_SPECIFIC_GEM_REPO']
 
 unless Object.const_defined?('ClientConfiguration')
   class ClientConfiguration
