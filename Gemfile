@@ -97,8 +97,10 @@ module WillowDependencies
 end
 
 gem 'willow', git: "git@github.com:PinnacleVenture/willow.git", branch: 'upgrade_to_rails_4'
-if ENV['CLIENT_SPECIFIC_GEM_NAME'] && ENV['CLIENT_SPECIFIC_GEM_REPO']
-  gem ENV['CLIENT_SPECIFIC_GEM_NAME'], git: ENV['CLIENT_SPECIFIC_GEM_REPO']
+
+if repo = ENV['CLIENT_SPECIFIC_GEM_REPO']
+  protocol = repo.start_with?('git') ? 'git' : 'path'
+  gem 'clientspecific', protocol => ENV['CLIENT_SPECIFIC_GEM_REPO']
 end
 
 WillowDependencies.load_my_dependencies self
