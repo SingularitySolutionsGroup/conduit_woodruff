@@ -49,8 +49,8 @@ module ConduitBryan
       config.filepicker_rails.api_key = ENV["FILEPICKER_API_KEY"]
     end
 
-    if gem = ENV['CLIENT_SPECIFIC_GEM_NAME']
-      config.paths['db/migrate'] << "#{`bundle show #{gem}`.strip}/db/migrate"
+    if gem = ENV['CLIENT_SPECIFIC_GEM_REPO']
+      config.paths['db/migrate'] << "#{`bundle show clientspecific`.strip}/db/migrate"
     end
 
   end
