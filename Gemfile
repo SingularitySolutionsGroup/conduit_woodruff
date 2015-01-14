@@ -96,7 +96,7 @@ module WillowDependencies
 
 end
 
-gem 'willow', git: "git@github.com:PinnacleVenture/willow.git", branch: 'upgrade_to_rails_4_with_security_and_more'
+gem 'willow', git: "git@github.com:PinnacleVenture/willow.git", branch: 'rails_4'
 
 if repo = ENV['CLIENT_SPECIFIC_GEM_REPO']
   protocol = repo.start_with?('git') ? 'git' : 'path'

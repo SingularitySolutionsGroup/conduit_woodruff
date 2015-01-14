@@ -9,8 +9,8 @@ GIT
 
 GIT
   remote: git@github.com:PinnacleVenture/willow.git
-  revision: 1e4f932cfdd93b1a28c49b01b72b428c522f5818
-  branch: upgrade_to_rails_4_with_security_and_more
+  revision: fa634aea81d3b463bac88196cc2f0fdfab3cb1c4
+  branch: rails_4
   specs:
     willow (0.9.0)
       activerecord-postgres-hstore
@@ -56,12 +56,6 @@ GIT
   specs:
     sentry-raven (0.11.2)
       faraday (>= 0.7.6)
-
-PATH
-  remote: ../conduit_bellus
-  specs:
-    clientspecific (0.0.1)
-      rails (~> 4.1.7)
 
 GEM
   remote: https://rubygems.org/
@@ -432,7 +426,6 @@ DEPENDENCIES
   binding_of_caller
   bunny (= 0.9.0.pre13)
   chronic
-  clientspecific!
   contrast
   daemons
   devise (>= 3.0.0)
