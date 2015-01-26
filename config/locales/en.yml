@@ -21,3 +21,8 @@
 
 en:
   hello: "Hello world"
+  devise:
+    willow_sessions:
+      refinery_user:
+        signed_out: "You have been signed out."
+
