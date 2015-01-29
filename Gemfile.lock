@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git@github.com:PinnacleVenture/willow.git
-  revision: fa634aea81d3b463bac88196cc2f0fdfab3cb1c4
+  revision: c57eda32e1de04bd2a7d7650cd10b6a2cf1d557d
   branch: rails_4
   specs:
     willow (0.9.0)
@@ -121,7 +121,7 @@ GEM
       timers (~> 4.0.0)
     chronic (0.10.2)
     coderay (1.1.0)
-    connection_pool (2.1.0)
+    connection_pool (2.1.1)
     contrast (1.1.0)
       awesome_print
       subtle
@@ -353,11 +353,11 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.2.2)
+    sprockets-rails (2.2.4)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    stripe (1.17.3)
+    stripe (1.18.0)
       json (~> 1.8.1)
       mime-types (>= 1.25, < 3.0)
       rest-client (~> 1.4)
