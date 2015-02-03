@@ -9,12 +9,13 @@ GIT
 
 GIT
   remote: git@github.com:PinnacleVenture/willow.git
-  revision: c57eda32e1de04bd2a7d7650cd10b6a2cf1d557d
+  revision: abb273dc4c1aae99487446ec31f6acbc8ec76903
   branch: rails_4
   specs:
     willow (0.9.0)
       activerecord-postgres-hstore
       filepicker-rails (>= 1.0.0)
+      mandrill-rails
       rails (~> 4.1.7)
       seam
       seam-active_record
@@ -193,6 +194,8 @@ GEM
     mandrill-api (1.0.53)
       excon (>= 0.16.0, < 1.0)
       json (>= 1.7.7, < 2.0)
+    mandrill-rails (1.0.2)
+      activesupport (>= 3.0.3)
     mechanize (2.7.3)
       domain_name (~> 0.5, >= 0.5.1)
       http-cookie (~> 1.0)
