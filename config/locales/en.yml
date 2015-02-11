@@ -25,4 +25,5 @@ en:
     willow_sessions:
       refinery_user:
         signed_out: "You have been signed out."
+        already_signed_out: "You have been signed out."
 
