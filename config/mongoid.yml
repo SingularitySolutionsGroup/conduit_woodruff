@@ -1,0 +1,30 @@
+test:
+  sessions:
+    default:
+      uri: mongodb://127.0.0.1/hive_test
+  options:
+    raise_not_found_error: false
+development:
+  sessions:
+    default:
+      uri: <%= ENV['HIVE_MONGO_DB'] %>
+    reporting:
+      uri: <%= ENV['REPORTING_HIVE_MONGO_DB'] %>
+  options:
+    raise_not_found_error: false
+staging:
+  sessions:
+    default:
+      uri: <%= ENV['HIVE_MONGO_DB'] %>
+    reporting:
+      uri: <%= ENV['REPORTING_HIVE_MONGO_DB'] %>
+  options:
+    raise_not_found_error: false
+production:
+  sessions:
+    default:
+      uri: <%= ENV['HIVE_MONGO_DB'] %>
+    reporting:
+      uri: <%= ENV['REPORTING_HIVE_MONGO_DB'] %>
+  options:
+    raise_not_found_error: false
