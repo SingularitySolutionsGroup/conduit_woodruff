@@ -55,6 +55,7 @@ module WillowDependencies
     gemfile.gem 'pg'
     gemfile.gem 'haml', '~> 4.0.0'
     gemfile.gem 'jquery-rails', '~> 2.0.0'
+    gemfile.gem 'the_google', git: 'https://github.com/darrencauthon/the_google.git'
 
     gemfile.gem 'devise', '>= 3.0.0'
     gemfile.gem 'babosa', '0.3.11'
