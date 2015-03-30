@@ -44,6 +44,14 @@ GIT
       rake
 
 GIT
+  remote: https://github.com/darrencauthon/the_google.git
+  revision: d6a14df10da0e2810bad77b56f09ffafab9ca151
+  specs:
+    the_google (0.0.1)
+      activesupport
+      google-api-client
+
+GIT
   remote: https://github.com/getsentry/raven-ruby.git
   revision: 4dfa1dac8ce51e912be8f60f3d4688f78eb803dc
   specs:
@@ -88,6 +96,10 @@ GEM
     amq-protocol (1.9.2)
     ansi (1.4.3)
     arel (5.0.1.20140414130214)
+    autoparse (0.3.3)
+      addressable (>= 2.3.1)
+      extlib (>= 0.9.15)
+      multi_json (>= 1.0.0)
     awesome_print (1.2.0)
     aws-sdk (1.58.0)
       aws-sdk-v1 (= 1.58.0)
@@ -143,6 +155,7 @@ GEM
       ffi (>= 1.3.0)
     eventmachine (1.0.3)
     excon (0.41.0)
+    extlib (0.9.16)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.6)
@@ -153,6 +166,16 @@ GEM
       thor (~> 0.19.1)
     friendly_id (5.0.4)
       activerecord (>= 4.0.0)
+    google-api-client (0.8.2)
+      activesupport (>= 3.2)
+      addressable (~> 2.3)
+      autoparse (~> 0.3)
+      extlib (~> 0.9)
+      faraday (~> 0.9)
+      launchy (~> 2.4)
+      multi_json (~> 1.10)
+      retriable (~> 1.4)
+      signet (~> 0.6)
     gyoku (0.4.6)
       builder (>= 2.1.2)
     haml (4.0.5)
@@ -179,6 +202,8 @@ GEM
     json (1.8.2)
     jwt (1.0.0)
     kgio (2.9.2)
+    launchy (2.4.3)
+      addressable (~> 2.3)
     macaddr (1.7.1)
       systemu (~> 2.6.2)
     mail (2.6.3)
@@ -295,6 +320,7 @@ GEM
     rest-client (1.7.2)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
+    retriable (1.4.1)
     routing-filter (0.3.1)
       actionpack
     ruby-hmac (0.4.0)
@@ -336,6 +362,12 @@ GEM
       ice_cube (~> 0.11.0)
       sidekiq (>= 2.16.0)
     signature (0.1.7)
+    signet (0.6.0)
+      addressable (~> 2.3)
+      extlib (~> 0.9)
+      faraday (~> 0.9)
+      jwt (~> 1.0)
+      multi_json (~> 1.10)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -474,6 +506,7 @@ DEPENDENCIES
   slim (>= 1.1.0)
   stripe
   subtle
+  the_google!
   three
   timecop
   truncate_html (= 0.5.5)
