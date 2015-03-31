@@ -9,14 +9,17 @@ GIT
 
 GIT
   remote: git@github.com:PinnacleVenture/willow.git
-  revision: 2dd777475d81e45ca340c978db056ccf4eb65e2d
+  revision: efa2bfd68f62616bdba3e66f7c6c18be5cd99d78
   branch: rails_4
   specs:
     willow (0.9.0)
       activerecord-postgres-hstore
       filepicker-rails (>= 1.0.0)
+      google-api-client
       mandrill-rails
+      omniauth-google-oauth2
       rails (~> 4.1.7)
+      safe_yaml
       seam
       seam-active_record
       seam-sidekiq
@@ -126,7 +129,7 @@ GEM
       timers (~> 4.0.0)
     chronic (0.10.2)
     coderay (1.1.0)
-    connection_pool (2.1.1)
+    connection_pool (2.1.3)
     contrast (1.1.0)
       awesome_print
       subtle
@@ -181,6 +184,7 @@ GEM
     haml (4.0.5)
       tilt
     hashery (2.1.1)
+    hashie (3.4.1)
     hike (1.2.3)
     hitimes (1.2.2)
     htmlentities (4.3.2)
@@ -211,7 +215,7 @@ GEM
     mandrill-api (1.0.53)
       excon (>= 0.16.0, < 1.0)
       json (>= 1.7.7, < 2.0)
-    mandrill-rails (1.0.2)
+    mandrill-rails (1.1.1)
       activesupport (>= 3.0.3)
     mechanize (2.7.3)
       domain_name (~> 0.5, >= 0.5.1)
@@ -254,16 +258,33 @@ GEM
       bson (~> 2.2)
       connection_pool (~> 2.0)
       optionable (~> 0.2.0)
-    multi_json (1.10.1)
+    multi_json (1.11.0)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     net-http-digest_auth (1.4)
     net-http-persistent (2.9.4)
-    netrc (0.10.2)
+    netrc (0.10.3)
     nokogiri (1.6.4.1)
       mini_portile (~> 0.6.0)
     nori (1.1.5)
     ntlm-http (0.1.1)
+    oauth2 (1.0.0)
+      faraday (>= 0.8, < 0.10)
+      jwt (~> 1.0)
+      multi_json (~> 1.3)
+      multi_xml (~> 0.5)
+      rack (~> 1.2)
+    omniauth (1.2.2)
+      hashie (>= 1.2, < 4)
+      rack (~> 1.0)
+    omniauth-google-oauth2 (0.2.6)
+      omniauth (> 1.0)
+      omniauth-oauth2 (~> 1.1)
+    omniauth-oauth2 (1.2.0)
+      faraday (>= 0.8, < 0.10)
+      multi_json (~> 1.3)
+      oauth2 (~> 1.0)
+      omniauth (~> 1.2)
     optionable (0.2.0)
     origin (2.1.1)
     orm_adapter (0.5.0)
@@ -313,11 +334,12 @@ GEM
     raindrops (0.13.0)
     rake (10.4.2)
     redis (3.2.1)
-    redis-namespace (1.5.1)
+    redis-namespace (1.5.2)
       redis (~> 3.0, >= 3.0.4)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
-    rest-client (1.7.2)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
     retriable (1.4.1)
@@ -384,7 +406,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    stripe (1.19.0)
+    stripe (1.20.4)
       json (~> 1.8.1)
       mime-types (>= 1.25, < 3.0)
       rest-client (~> 1.4)
@@ -394,7 +416,7 @@ GEM
     temple (0.6.10)
     terminal-table (1.4.5)
     thor (0.19.1)
-    thread_safe (0.3.4)
+    thread_safe (0.3.5)
     three (1.1.0)
     tilt (1.4.1)
     timecop (0.7.1)
