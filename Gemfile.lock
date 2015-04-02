@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git@github.com:PinnacleVenture/willow.git
-  revision: 7db924a6cfa27f9f95cb192d2860d80c1502cbe4
+  revision: c9091693194e62e7bd3d273249181458433f5ede
   specs:
     willow (0.9.0)
       activerecord-postgres-hstore
