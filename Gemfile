@@ -71,6 +71,8 @@ module WillowDependencies
     gemfile.gem 'truncate_html', '0.5.5'
     gemfile.gem 'warden'#, '1.1.1'
 
+    gemfile.gem 'ajax-datatables-rails', git: 'https://github.com/darrencauthon/ajax-datatables-rails.git'
+    
     gemfile.group :development, :test do
       #gemfile.gem 'sqlite3' unless ENV['HOME'] == '/home/ubuntu'
       gemfile.gem 'minitest'
