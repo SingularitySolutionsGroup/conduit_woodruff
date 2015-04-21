@@ -7,7 +7,6 @@ Interchangeable.define(StudentManagementDetailPage, :fields) do
     { type: 'field', data: { field: 'program_of_interest', label: 'Program' } },
     { type: 'field', data: { field: 'agent_name',          label: 'Agent Name' } },
     { type: 'field', data: { field: 'disc_type',           label: 'DISC' } },
-    { type: 'notification_bcc' },
     { type: 'application' },
   ]
 end
