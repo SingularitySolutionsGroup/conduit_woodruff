@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git@github.com:PinnacleVenture/willow.git
-  revision: d8d4a88e0b91311670f0bd221f4f3919ca45409e
+  revision: 7c646b0e5ba7c938f80a208b3f8ae99b272a20e3
   branch: master
   specs:
     willow (0.9.0)
@@ -136,7 +136,7 @@ GEM
       timers (~> 4.0.0)
     chronic (0.10.2)
     coderay (1.1.0)
-    connection_pool (2.1.3)
+    connection_pool (2.2.0)
     contrast (1.1.0)
       awesome_print
       subtle
@@ -151,7 +151,7 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
-    domain_name (0.5.23)
+    domain_name (0.5.24)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (0.11.1)
       dotenv-deployment (~> 0.0.2)
@@ -192,7 +192,6 @@ GEM
       tilt
     hashery (2.1.1)
     hashie (3.4.1)
-    hike (1.2.3)
     hitimes (1.2.2)
     htmlentities (4.3.2)
     http-cookie (1.0.2)
@@ -240,7 +239,7 @@ GEM
     metaclass (0.0.4)
     mime-types (2.4.3)
     mini_portile (0.6.1)
-    minitest (5.5.1)
+    minitest (5.6.0)
     minitest-focus (1.1.0)
       minitest (>= 4, < 6)
     minitest-rails (2.1.1)
@@ -287,9 +286,7 @@ GEM
     omniauth-google-oauth2 (0.2.6)
       omniauth (> 1.0)
       omniauth-oauth2 (~> 1.1)
-    omniauth-oauth2 (1.2.0)
-      faraday (>= 0.8, < 0.10)
-      multi_json (~> 1.3)
+    omniauth-oauth2 (1.3.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
     optionable (0.2.0)
@@ -404,18 +401,14 @@ GEM
     slim (2.1.0)
       temple (~> 0.6.9)
       tilt (>= 1.3.3, < 2.1)
-    sprockets (2.12.3)
-      hike (~> 1.2)
-      multi_json (~> 1.0)
+    sprockets (3.0.2)
       rack (~> 1.0)
-      tilt (~> 1.1, != 1.3.0)
     sprockets-rails (2.2.4)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    stripe (1.20.4)
+    stripe (1.21.0)
       json (~> 1.8.1)
-      mime-types (>= 1.25, < 3.0)
       rest-client (~> 1.4)
     subtle (1.2.0)
       blankslate
@@ -446,7 +439,7 @@ GEM
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.6)
+    unf_ext (0.0.7.1)
     unicorn (4.8.3)
       kgio (~> 2.6)
       rack
