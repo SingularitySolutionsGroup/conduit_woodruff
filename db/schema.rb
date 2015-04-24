@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150327103000) do
+ActiveRecord::Schema.define(version: 20150410145301) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -269,6 +269,17 @@ ActiveRecord::Schema.define(version: 20150327103000) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text     "tags"
+  end
+
+  create_table "google_appointment_logs", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.text     "available_appointment"
+    t.text     "event"
+    t.string   "google_calendar_id"
+    t.integer  "user_id"
+    t.integer  "user_application_id"
+    t.text     "result"
   end
 
   create_table "google_authentications", force: true do |t|
@@ -585,8 +596,8 @@ ActiveRecord::Schema.define(version: 20150327103000) do
     t.boolean  "pci_migration_complete",           default: true
     t.datetime "last_activity_at"
     t.text     "avatar_url"
-    t.string   "phone"
     t.string   "campus_login_name"
+    t.string   "phone"
   end
 
   add_index "refinery_users", ["id"], name: "index_refinery_users_on_id", using: :btree
@@ -740,6 +751,14 @@ ActiveRecord::Schema.define(version: 20150327103000) do
     t.integer  "user_application_id"
   end
 
+  create_table "temporary_data_stores", force: true do |t|
+    t.string   "key"
+    t.datetime "expire_at"
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "tracked_events", force: true do |t|
     t.string   "lead_id"
     t.string   "event_name"
@@ -782,9 +801,10 @@ ActiveRecord::Schema.define(version: 20150327103000) do
     t.integer  "master_application_id"
     t.integer  "user_id"
     t.text     "application_stamp"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
     t.hstore   "data"
+    t.boolean  "uses_default_application"
   end
 
   add_index "user_applications", ["data"], name: "index_user_applications_on_data", using: :gist
@@ -806,6 +826,16 @@ ActiveRecord::Schema.define(version: 20150327103000) do
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
     t.integer  "user_application_id"
+  end
+
+  create_table "user_master_application_id_change_logs", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "from_master_application_id"
+    t.integer  "to_master_application_id"
+    t.integer  "admin_user_id"
+    t.string   "admin_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "user_notifications", force: true do |t|
