@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git@github.com:PinnacleVenture/willow.git
-  revision: d2cdeb6afbddf63596b8179b01d6650b091f972c
+  revision: ce5f154bb8c079c26f26e9178a39c52ad023f4af
   branch: master
   specs:
     willow (0.9.0)
@@ -128,6 +128,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     blankslate (3.1.3)
+    browser (0.8.0)
     bson (2.3.0)
     builder (3.2.2)
     bunny (0.9.0.pre13)
@@ -239,9 +240,9 @@ GEM
       rack-contrib (~> 1.1)
       railties (>= 3.0.0, < 5.0.0)
     metaclass (0.0.4)
-    mime-types (2.4.3)
+    mime-types (2.5)
     mini_portile (0.6.1)
-    minitest (5.6.0)
+    minitest (5.6.1)
     minitest-focus (1.1.0)
       minitest (>= 4, < 6)
     minitest-rails (2.1.1)
@@ -482,6 +483,7 @@ DEPENDENCIES
   bcrypt-ruby (= 3.1.5)
   better_errors
   binding_of_caller
+  browser
   bunny (= 0.9.0.pre13)
   chronic
   contrast
