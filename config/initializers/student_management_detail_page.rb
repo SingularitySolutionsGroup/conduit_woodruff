@@ -8,5 +8,6 @@ Interchangeable.define(StudentManagementDetailPage, :fields) do
     { type: 'field', data: { field: 'agent_name',          label: 'Agent Name' } },
     { type: 'field', data: { field: 'disc_type',           label: 'DISC' } },
     { type: 'application' },
+    { type: 'user_field', data: { field: 'last_browser_name', label: 'Last Browser' } },
   ]
 end
