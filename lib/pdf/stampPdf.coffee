@@ -63,6 +63,14 @@ stampPdf = (phantom, webpage, options) ->
 
             jQuery("input").css "border", "1px solid gray"
             jQuery("input").css "border", "1px solid gray"
+
+            # maintain background colors when printing
+            # the pdfs. Only maintains bgcolor, as that's
+            # what gets out of tinymce
+            jQuery("[bgcolor]").each (index, item) ->
+              item = jQuery(item)
+              item.css "background-color", item.attr('bgcolor') + " !important"
+
             jQuery("input,label,span").each (index, item) ->
               fontSize = parseInt(jQuery(item).css("font-size"))
               fontSize = (fontSize - 1) + "px"
