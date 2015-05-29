@@ -209,7 +209,7 @@ GEM
       rack
     i18n (0.7.0)
     ice_cube (0.11.3)
-    interchangeable (0.0.5)
+    interchangeable (0.0.6)
       terminal-table
     jquery-rails (2.0.3)
       railties (>= 3.1.0, < 5.0)
