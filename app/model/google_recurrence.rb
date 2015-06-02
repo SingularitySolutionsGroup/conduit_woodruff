@@ -5,19 +5,21 @@ module GoogleRecurrence
     recurrence = 'FREQ=WEEKLY;INTERVAL=1;BYDAY=MO'
     from = 'Sun, 31 May 2015 20:43:58 +0000'
     to   = 'Tue, 02 Jun 2016 20:43:58 +0000'
-    get_the_recurrences event_start_date, recurrence, from, to
+    get_the_recurrences event_start_date, recurrence, [from, to]
   end
 
   def self.testing2
     testing.sub('[', '').reverse.sub(']', '').reverse.split(',').map { |x| x.strip }.map { |x| DateTime.parse x }
   end
 
-  def self.get_the_recurrences event_start_date, recurrence, from, to
+  def self.get_the_recurrences date, recurrence, range
+    from = range[0]
+    to   = range[1]
 
     statement = <<EOF
 var RRule = require('#{Rails.root}/lib/recurrence/rrule.js').RRule;
 var options = RRule.parseString('#{recurrence}');
-options.dtstart = new Date(Date.parse('#{event_start_date}'));
+options.dtstart = new Date(Date.parse('#{date}'));
 var rule = new RRule(options);
 var results = rule.between(new Date(Date.parse('#{from}')), new Date(Date.parse('#{to}')));
 console.log(results);
