@@ -59,11 +59,12 @@ GIT
 
 GIT
   remote: https://github.com/darrencauthon/the_google.git
-  revision: d6a14df10da0e2810bad77b56f09ffafab9ca151
+  revision: ef9b42fcc0b3bc846ce89d9b00e63c9574785687
   specs:
     the_google (0.0.1)
       activesupport
       google-api-client
+      interchangeable
 
 GIT
   remote: https://github.com/getsentry/raven-ruby.git
@@ -215,7 +216,7 @@ GEM
     jquery-rails (2.0.3)
       railties (>= 3.1.0, < 5.0)
       thor (~> 0.14)
-    json (1.8.2)
+    json (1.8.3)
     jwt (1.0.0)
     kgio (2.9.2)
     launchy (2.4.3)
