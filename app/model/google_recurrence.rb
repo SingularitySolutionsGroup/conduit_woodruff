@@ -13,8 +13,9 @@ module GoogleRecurrence
   end
 
   def self.get_the_recurrences date, recurrence, range
-    from = range[0]
-    to   = range[1]
+    recurrence = recurrence.sub('RRULE:', '')
+    from = DateTime.parse(range[0].to_s)
+    to   = DateTime.parse(range[1].to_s)
 
     statement = <<EOF
 var RRule = require('#{Rails.root}/lib/recurrence/rrule.js').RRule;
