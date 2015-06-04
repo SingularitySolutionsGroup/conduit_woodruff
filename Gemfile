@@ -58,7 +58,7 @@ module WillowDependencies
     gemfile.gem 'the_google', git: 'https://github.com/darrencauthon/the_google.git'
     gemfile.gem 'browser'
 
-    gemfile.gem 'tickle'
+    gemfile.gem 'tickle', git: 'git@github.com:darrencauthon/tickle.git'
 
     gemfile.gem 'devise', '>= 3.0.0'
     gemfile.gem 'babosa', '0.3.11'
