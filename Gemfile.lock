@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git@github.com:PinnacleVenture/willow.git
-  revision: c9726cb82b1e3449be9384940cd9920113a14afc
+  revision: 8a20cb5fb2be6fe9f2963126ee1b7697be5c71ca
   branch: master
   specs:
     willow (0.9.0)
