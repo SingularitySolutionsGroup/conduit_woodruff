@@ -8,10 +8,6 @@ module GoogleRecurrence
     get_the_recurrences event_start_date, recurrence, [from, to]
   end
 
-  def self.testing2
-    testing.sub('[', '').reverse.sub(']', '').reverse.split(',').map { |x| x.strip }.map { |x| DateTime.parse x }
-  end
-
   def self.get_the_recurrences date, recurrence, range
     recurrence = recurrence.sub('RRULE:', '')
     from = DateTime.parse(range[0].to_s)
@@ -28,7 +24,9 @@ EOF
 
     statement = "node -e \"#{statement}\""
 
-    %x( #{statement} )
+    results = %x( #{statement} )
+
+    results.sub('[', '').reverse.sub(']', '').reverse.split(',').map { |x| x.strip }.map { |x| DateTime.parse x }
 
   end
 end
