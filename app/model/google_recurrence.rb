@@ -1,13 +1,10 @@
 module GoogleRecurrence
 
-  def self.testing
-    event_start_date = DateTime.parse('2015-04-20 15:00:00 +0000')
-    recurrence = 'FREQ=WEEKLY;INTERVAL=1;BYDAY=MO'
-    from = 'Sun, 31 May 2015 20:43:58 +0000'
-    to   = 'Tue, 02 Jun 2016 20:43:58 +0000'
-    get_the_recurrences event_start_date, recurrence, [from, to]
-  end
+  # sample: 'FREQ=WEEKLY;INTERVAL=1;BYDAY=MO'
 
+  # this method generates a node script that will use the
+  # rrule package to generate the recurring events given
+  # a RRULE value and a set of dates
   def self.get_the_recurrences date, recurrence, range
     recurrence = recurrence.sub('RRULE:', '')
     from = DateTime.parse(range[0].to_s)
