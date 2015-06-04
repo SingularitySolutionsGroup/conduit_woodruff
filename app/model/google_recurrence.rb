@@ -23,7 +23,7 @@ EOF
 
     results = %x( #{statement} )
 
-    results.sub('[', '').reverse.sub(']', '').reverse.split(',').map { |x| x.strip }.map { |x| DateTime.parse x }
+    results.sub('[', '').reverse.sub(']', '').reverse.split(',').map { |x| x.strip }.select { |x| x.present? }.map { |x| DateTime.parse x }
 
   end
 end
