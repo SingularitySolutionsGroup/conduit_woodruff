@@ -59,11 +59,12 @@ GIT
 
 GIT
   remote: https://github.com/darrencauthon/the_google.git
-  revision: d6a14df10da0e2810bad77b56f09ffafab9ca151
+  revision: 7cf8df5a4f8a251f102cc63502f09b0d5e7f9a43
   specs:
     the_google (0.0.1)
       activesupport
       google-api-client
+      interchangeable
 
 GIT
   remote: https://github.com/getsentry/raven-ruby.git
