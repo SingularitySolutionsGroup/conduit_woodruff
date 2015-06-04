@@ -59,7 +59,7 @@ GIT
 
 GIT
   remote: https://github.com/darrencauthon/the_google.git
-  revision: 7cf8df5a4f8a251f102cc63502f09b0d5e7f9a43
+  revision: ef422f2c72baae71df5bfe875a25d2a2ed5e96a0
   specs:
     the_google (0.0.1)
       activesupport
