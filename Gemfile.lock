@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git@github.com:PinnacleVenture/willow.git
-  revision: f6b5766081de09dc54a2daa4de007d33b6f255ac
+  revision: 24cb6fb6c11ae75b230c9c77da29fee25527d222
   branch: master
   specs:
     willow (0.9.0)
@@ -322,7 +322,7 @@ GEM
       httpclient (~> 2.3.0)
       multi_json (~> 1.0)
       signature (~> 0.1.6)
-    rack (1.5.3)
+    rack (1.5.4)
     rack-contrib (1.2.0)
       rack (>= 0.9.1)
     rack-mobile-detect (0.4.0)
