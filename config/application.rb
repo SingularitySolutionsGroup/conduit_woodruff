@@ -3,6 +3,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 
 require 'willow'
+require 'source_code'
 Willow.require_everything
 require 'clientspecific' if ENV['CLIENT_SPECIFIC_GEM_REPO']
 

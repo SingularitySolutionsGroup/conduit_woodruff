@@ -60,6 +60,8 @@ module WillowDependencies
 
     gemfile.gem 'tickle', git: 'git@github.com:darrencauthon/tickle.git'
 
+    gemfile.gem 'source_code'
+
     gemfile.gem 'devise', '>= 3.0.0'
     gemfile.gem 'babosa', '0.3.11'
     gemfile.gem 'bcrypt', '3.1.7'
