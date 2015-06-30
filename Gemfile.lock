@@ -416,6 +416,7 @@ GEM
     slim (2.1.0)
       temple (~> 0.6.9)
       tilt (>= 1.3.3, < 2.1)
+    source_code (0.1.0)
     sprockets (2.12.4)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -547,6 +548,7 @@ DEPENDENCIES
   sidetiq (= 0.5.0)
   sinatra (>= 1.3.0)
   slim (>= 1.1.0)
+  source_code
   stripe
   subtle
   the_google!
