@@ -75,6 +75,17 @@ stampPdf = (phantom, webpage, options) ->
               fontSize = parseInt(jQuery(item).css("font-size"))
               fontSize = (fontSize - 1) + "px"
               jQuery(item).css "font-size", fontSize
+
+            # text areas should be converted to HTML divs (if they have content)
+            # otherwise, overflow content would be lost
+            jQuery('textarea').each (index, item) ->
+              if (jQuery(item).val().length > 0)
+                div_with_textarea_content = jQuery('<div />')
+                  .css('border', '1px solid black')
+                  .css('margin', '3px')
+                  .css('padding', '3px')
+                  .html(jQuery(item).val().replace(/(\r\n|\n\r|\r|\n)/g, "<br>"))
+                jQuery(item).replaceWith(div_with_textarea_content)
         ), 5000
 
         # give our code 10 seconds to do what
