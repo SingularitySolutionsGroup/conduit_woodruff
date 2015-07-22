@@ -22,7 +22,7 @@ module WillowDependencies
     gemfile.gem 'stripe'
     gemfile.gem 'three'
     gemfile.gem 'pdf-reader'
-    gemfile.gem 'filepicker-rails', '>= 1.0.0'
+    gemfile.gem 'filepicker-rails', '1.4.0'
     gemfile.gem 'twilio-ruby'
     gemfile.gem 'whenever'
     gemfile.gem 'pdfcrowd'

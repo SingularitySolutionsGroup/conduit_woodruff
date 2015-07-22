@@ -231,7 +231,7 @@ GEM
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.6)
-    filepicker-rails (2.0.0)
+    filepicker-rails (1.4.0)
       rails (>= 3.2)
     foreman (0.75.0)
       dotenv (~> 0.11.1)
@@ -301,7 +301,7 @@ GEM
       railties (>= 3.0.0, < 5.0.0)
     metaclass (0.0.4)
     mime-types (2.6.1)
-    mini_portile (0.6.1)
+    mini_portile (0.6.2)
     minitest (5.7.0)
     minitest-focus (1.1.0)
       minitest (>= 4, < 6)
@@ -334,7 +334,7 @@ GEM
     net-http-digest_auth (1.4)
     net-http-persistent (2.9.4)
     netrc (0.10.3)
-    nokogiri (1.6.4.1)
+    nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     nori (1.1.5)
     ntlm-http (0.1.1)
@@ -561,7 +561,7 @@ DEPENDENCIES
   dragonfly (= 0.9.15)
   ekg
   eventmachine
-  filepicker-rails (>= 1.0.0)
+  filepicker-rails (= 1.4.0)
   foreman
   friendly_id (>= 4.0.9)
   haml (~> 4.0.0)
