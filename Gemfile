@@ -58,6 +58,8 @@ module WillowDependencies
     gemfile.gem 'the_google', git: 'https://github.com/darrencauthon/the_google.git'
     gemfile.gem 'browser'
 
+    gemfile.gem 'velocify', git: 'git@github.com:SingularitySolutionsGroup/velocify.git'
+
     gemfile.gem 'tickle', git: 'git@github.com:darrencauthon/tickle.git'
 
     gemfile.gem 'source_code'
