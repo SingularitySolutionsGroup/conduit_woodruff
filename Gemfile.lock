@@ -34,6 +34,14 @@ GIT
       will_paginate
 
 GIT
+  remote: git@github.com:SingularitySolutionsGroup/roland.git
+  revision: 8114f7a6de2472ee0c2d3e9cc91919d63e18c17d
+  specs:
+    roland (0.0.1)
+      activerecord-postgres-hstore
+      rails (>= 4.1.7)
+
+GIT
   remote: git@github.com:SingularitySolutionsGroup/velocify.git
   revision: 37415d2415a1119d4fcb225d222e25f4b709d74c
   specs:
@@ -41,14 +49,6 @@ GIT
       activesupport
       savon
       xml_hate (>= 2.0.0)
-
-GIT
-  remote: git@github.com:darrencauthon/tickle.git
-  revision: c58b570d462d2264e01a1e929182013a9f906399
-  specs:
-    tickle (1.0.2)
-      activesupport
-      chronic (>= 0.2.3)
 
 GIT
   remote: https://github.com/PinnacleVenture/mobile-fu.git
@@ -82,6 +82,14 @@ GIT
       activesupport
       google-api-client
       interchangeable
+
+GIT
+  remote: https://github.com/darrencauthon/tickle.git
+  revision: c58b570d462d2264e01a1e929182013a9f906399
+  specs:
+    tickle (1.0.2)
+      activesupport
+      chronic (>= 0.2.3)
 
 GIT
   remote: https://github.com/getsentry/raven-ruby.git
@@ -266,7 +274,7 @@ GEM
     httpi (1.1.1)
       rack
     i18n (0.7.0)
-    ice_cube (0.11.3)
+    ice_cube (0.12.1)
     interchangeable (0.0.6)
       terminal-table
     jquery-rails (2.0.3)
@@ -448,9 +456,9 @@ GEM
       redis-namespace (>= 1.3.1)
     sidekiq-failures (0.4.3)
       sidekiq (>= 2.16.0)
-    sidetiq (0.5.0)
+    sidetiq (0.6.1)
       celluloid (>= 0.14.1)
-      ice_cube (~> 0.11.0)
+      ice_cube (~> 0.12.0)
       sidekiq (>= 2.16.0)
     signature (0.1.7)
     signet (0.6.0)
@@ -590,6 +598,7 @@ DEPENDENCIES
   rack-plastic
   rack-rewrite
   rails (= 4.1.7)
+  roland!
   routing-filter (= 0.3.1)
   rubyXL
   savon (~> 1.2.0)
@@ -600,7 +609,7 @@ DEPENDENCIES
   seo_meta (= 1.3.0)
   sidekiq (= 2.16.0)
   sidekiq-failures
-  sidetiq (= 0.5.0)
+  sidetiq (= 0.6.1)
   sinatra (>= 1.3.0)
   slim (>= 1.1.0)
   source_code

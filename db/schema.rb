@@ -11,12 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150410145301) do
+ActiveRecord::Schema.define(version: 20150722204001) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-  enable_extension "pg_stat_statements"
   enable_extension "hstore"
+  enable_extension "pg_stat_statements"
+
+  create_table "admins", force: true do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
+  end
+
+  add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
+  add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
 
   create_table "analytics", force: true do |t|
     t.datetime "create_date"
@@ -95,6 +113,15 @@ ActiveRecord::Schema.define(version: 20150410145301) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "cached_student_applications", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "user_application_id"
+    t.integer  "master_application_id"
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "campus_login_leads", force: true do |t|
     t.string   "lead_id"
     t.text     "data"
@@ -116,6 +143,14 @@ ActiveRecord::Schema.define(version: 20150410145301) do
     t.datetime "sent_at"
     t.text     "sent_data"
     t.string   "sent_status"
+  end
+
+  create_table "checklist_approvals", force: true do |t|
+    t.integer  "approved_by_user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "checklist_key"
+    t.integer  "user_id"
   end
 
   create_table "client_side_logs", force: true do |t|
@@ -154,6 +189,7 @@ ActiveRecord::Schema.define(version: 20150410145301) do
     t.datetime "updated_at"
     t.integer  "user_id"
     t.string   "lead_id"
+    t.string   "campus"
     t.string   "walk_in_form_id"
   end
 
@@ -180,8 +216,8 @@ ActiveRecord::Schema.define(version: 20150410145301) do
     t.string   "sender_email"
     t.text     "subject"
     t.text     "recipient_emails"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "request_type"
   end
 
@@ -298,13 +334,18 @@ ActiveRecord::Schema.define(version: 20150410145301) do
     t.string   "last_name"
     t.string   "email"
     t.string   "agent_name"
-    t.datetime "last_activity_at"
-    t.string   "start_date"
     t.datetime "create_date"
+    t.datetime "last_activity_at"
     t.string   "status_title"
+    t.string   "start_date"
   end
 
   add_index "hive_records", ["data"], name: "index_hive_records_on_data", using: :gist
+  add_index "hive_records", ["email"], name: "index_hive_records_on_email", using: :btree
+  add_index "hive_records", ["first_name"], name: "index_hive_records_on_first_name", using: :btree
+  add_index "hive_records", ["last_activity_at"], name: "index_hive_records_on_last_activity_at", using: :btree
+  add_index "hive_records", ["last_name"], name: "index_hive_records_on_last_name", using: :btree
+  add_index "hive_records", ["lead_id"], name: "index_hive_records_on_lead_id", using: :btree
 
   create_table "incrementing_integers", force: true do |t|
     t.datetime "created_at"
@@ -318,6 +359,26 @@ ActiveRecord::Schema.define(version: 20150410145301) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "lead_data_change_logs", force: true do |t|
+    t.text     "changed_keys"
+    t.text     "changed_new_data"
+    t.text     "changed_original_data"
+    t.string   "lead_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "lead_entries", force: true do |t|
+    t.text     "input"
+    t.text     "form"
+    t.text     "request"
+    t.integer  "user_id"
+    t.string   "lead_id"
+    t.string   "match"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "login_records", force: true do |t|
     t.string   "ip"
     t.integer  "user_id"
@@ -328,8 +389,8 @@ ActiveRecord::Schema.define(version: 20150410145301) do
 
   create_table "login_tokens", force: true do |t|
     t.string   "token"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.integer  "user_id"
     t.boolean  "redeemed"
     t.datetime "redeemed_at"
@@ -406,6 +467,12 @@ ActiveRecord::Schema.define(version: 20150410145301) do
     t.string   "hive_client_id"
     t.string   "hive_lead_id"
     t.integer  "refinery_user_id"
+  end
+
+  create_table "one_off_unsubscribes", force: true do |t|
+    t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "original_form_definition_logs", force: true do |t|
@@ -595,13 +662,41 @@ ActiveRecord::Schema.define(version: 20150410145301) do
     t.text     "important_data"
     t.boolean  "pci_migration_complete",           default: true
     t.datetime "last_activity_at"
+    t.string   "last_user_agent"
+    t.string   "last_browser_name"
     t.text     "avatar_url"
     t.string   "campus_login_name"
     t.string   "phone"
   end
 
+  add_index "refinery_users", ["hive_lead_id"], name: "index_refinery_users_on_hive_lead_id", using: :btree
   add_index "refinery_users", ["id"], name: "index_refinery_users_on_id", using: :btree
   add_index "refinery_users", ["username"], name: "refinery_users_unique_username", unique: true, using: :btree
+
+  create_table "reviews", force: true do |t|
+    t.string   "key"
+    t.integer  "user_id"
+    t.integer  "user_application_id"
+    t.integer  "reviewer_user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "scheduled_reports", force: true do |t|
+    t.string   "to"
+    t.string   "subject"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "notification"
+    t.string   "name"
+    t.string   "report_id"
+    t.datetime "next_recurrence"
+    t.string   "tickle_expression"
+    t.datetime "last_sent_at"
+    t.datetime "last_occurrence"
+    t.string   "filter"
+    t.string   "send_empty_reports"
+  end
 
   create_table "schools", force: true do |t|
     t.text     "name"
@@ -669,8 +764,8 @@ ActiveRecord::Schema.define(version: 20150410145301) do
 
   create_table "sidekiq_job_backups", force: true do |t|
     t.text     "data"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "site_configurations", force: true do |t|
@@ -751,6 +846,13 @@ ActiveRecord::Schema.define(version: 20150410145301) do
     t.integer  "user_application_id"
   end
 
+  add_index "student_application_states", ["step_id"], name: "index_student_application_states_on_step_id", using: :btree
+  add_index "student_application_states", ["submission_id"], name: "index_student_application_states_on_submission_id", using: :btree
+  add_index "student_application_states", ["user_application_id"], name: "index_student_application_states_on_user_application_id", using: :btree
+  add_index "student_application_states", ["user_id", "step_id"], name: "index_student_application_states_on_user_id_and_step_id", using: :btree
+  add_index "student_application_states", ["user_id", "user_application_id"], name: "user_id_and_app_id", using: :btree
+  add_index "student_application_states", ["user_id"], name: "index_student_application_states_on_user_id", using: :btree
+
   create_table "temporary_data_stores", force: true do |t|
     t.string   "key"
     t.datetime "expire_at"
@@ -828,6 +930,10 @@ ActiveRecord::Schema.define(version: 20150410145301) do
     t.integer  "user_application_id"
   end
 
+  add_index "user_events", ["event_type"], name: "index_user_events_on_event_type", using: :btree
+  add_index "user_events", ["user_id", "event_type"], name: "index_user_events_on_user_id_and_event_type", using: :btree
+  add_index "user_events", ["user_id"], name: "index_user_events_on_user_id", using: :btree
+
   create_table "user_master_application_id_change_logs", force: true do |t|
     t.integer  "user_id"
     t.integer  "from_master_application_id"
@@ -847,10 +953,15 @@ ActiveRecord::Schema.define(version: 20150410145301) do
     t.text     "message"
   end
 
+  add_index "user_notifications", ["created_at"], name: "index_user_notifications_on_created_at", using: :btree
+  add_index "user_notifications", ["created_at"], name: "user_notifications_created_at_in_desc", order: {"created_at"=>:desc}, using: :btree
+  add_index "user_notifications", ["user_id"], name: "index_user_notifications_on_user_id", using: :btree
+
   create_table "user_tags", force: true do |t|
     t.text     "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "special_type"
   end
 
   create_table "user_tags_users", id: false, force: true do |t|
@@ -862,8 +973,8 @@ ActiveRecord::Schema.define(version: 20150410145301) do
     t.integer  "user_id"
     t.string   "url"
     t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.string   "code"
     t.boolean  "verified"
     t.datetime "verified_at"

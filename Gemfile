@@ -38,7 +38,7 @@ module WillowDependencies
     gemfile.gem 'mixpanel-ruby'
     gemfile.gem 'sidekiq', '2.16.0'
     gemfile.gem 'sidekiq-failures'
-    gemfile.gem 'sidetiq', '0.5.0'
+    gemfile.gem 'sidetiq', '0.6.1'
     gemfile.gem 'rubyXL'
     gemfile.gem 'zip'
     gemfile.gem 'venn'
@@ -58,12 +58,6 @@ module WillowDependencies
     gemfile.gem 'the_google', git: 'https://github.com/darrencauthon/the_google.git'
     gemfile.gem 'browser'
 
-    gemfile.gem 'velocify', git: 'git@github.com:SingularitySolutionsGroup/velocify.git'
-
-    gemfile.gem 'tickle', git: 'git@github.com:darrencauthon/tickle.git'
-
-    gemfile.gem 'source_code'
-
     gemfile.gem 'devise', '>= 3.0.0'
     gemfile.gem 'babosa', '0.3.11'
     gemfile.gem 'bcrypt', '3.1.7'
@@ -78,8 +72,14 @@ module WillowDependencies
     gemfile.gem 'truncate_html', '0.5.5'
     gemfile.gem 'warden'#, '1.1.1'
 
+    gemfile.gem 'velocify', git: 'git@github.com:SingularitySolutionsGroup/velocify.git'
+
+    gemfile.gem 'tickle', git: 'https://github.com/darrencauthon/tickle.git'
+
+    gemfile.gem 'source_code'
+
     gemfile.gem 'ajax-datatables-rails', git: 'https://github.com/darrencauthon/ajax-datatables-rails.git'
-    
+
     gemfile.group :development, :test do
       #gemfile.gem 'sqlite3' unless ENV['HOME'] == '/home/ubuntu'
       gemfile.gem 'minitest'
@@ -100,6 +100,8 @@ module WillowDependencies
       gemfile.gem "better_errors"
       gemfile.gem "binding_of_caller"
     end
+
+    gemfile.gem 'roland', git: 'git@github.com:SingularitySolutionsGroup/roland.git'
 
   end
 
