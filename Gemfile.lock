@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git@github.com:PinnacleVenture/willow.git
-  revision: a9d50ed69f37ab0ff424533f32fc5431cf77714a
+  revision: ad1c75652d7a123776ec4949f2b01304aa0519eb
   branch: master
   specs:
     willow (0.9.0)
@@ -20,6 +20,7 @@ GIT
       mandrill-rails
       omniauth-google-oauth2
       rails (~> 4.1.7)
+      roland
       safe_yaml
       seam
       seam-active_record
@@ -157,7 +158,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     blankslate (3.1.3)
-    browser (0.8.0)
+    browser (0.9.1)
     bson (2.3.0)
     builder (3.2.2)
     bunny (0.9.0.pre13)
@@ -292,7 +293,7 @@ GEM
     mandrill-api (1.0.53)
       excon (>= 0.16.0, < 1.0)
       json (>= 1.7.7, < 2.0)
-    mandrill-rails (1.2.0)
+    mandrill-rails (1.3.0)
       activesupport (>= 3.0.3)
     mechanize (2.7.3)
       domain_name (~> 0.5, >= 0.5.1)
@@ -484,7 +485,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    stripe (1.23.0)
+    stripe (1.24.0)
       json (~> 1.8.1)
       rest-client (~> 1.4)
     strong_password (0.0.4)
@@ -500,7 +501,7 @@ GEM
     timecop (0.7.1)
     timers (4.0.1)
       hitimes
-    tinymce-rails (4.2.1)
+    tinymce-rails (4.2.3)
       railties (>= 3.1.1)
     tinymce-rails-imageupload (4.0.16.beta)
       railties (>= 3.2, < 5)
