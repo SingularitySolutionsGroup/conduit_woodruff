@@ -8,7 +8,24 @@ GIT
       ruby-hmac
 
 GIT
-  remote: git@github.com:PinnacleVenture/willow.git
+  remote: git@github.com:SingularitySolutionsGroup/roland.git
+  revision: 8114f7a6de2472ee0c2d3e9cc91919d63e18c17d
+  specs:
+    roland (0.0.1)
+      activerecord-postgres-hstore
+      rails (>= 4.1.7)
+
+GIT
+  remote: git@github.com:SingularitySolutionsGroup/velocify.git
+  revision: 37415d2415a1119d4fcb225d222e25f4b709d74c
+  specs:
+    velocify (0.0.1)
+      activesupport
+      savon
+      xml_hate (>= 2.0.0)
+
+GIT
+  remote: git@github.com:SingularitySolutionsGroup/willow.git
   revision: ad1c75652d7a123776ec4949f2b01304aa0519eb
   branch: master
   specs:
@@ -33,23 +50,6 @@ GIT
       tickle
       tinymce-rails-imageupload (~> 4.0.0.beta)
       will_paginate
-
-GIT
-  remote: git@github.com:SingularitySolutionsGroup/roland.git
-  revision: 8114f7a6de2472ee0c2d3e9cc91919d63e18c17d
-  specs:
-    roland (0.0.1)
-      activerecord-postgres-hstore
-      rails (>= 4.1.7)
-
-GIT
-  remote: git@github.com:SingularitySolutionsGroup/velocify.git
-  revision: 37415d2415a1119d4fcb225d222e25f4b709d74c
-  specs:
-    velocify (0.0.1)
-      activesupport
-      savon
-      xml_hate (>= 2.0.0)
 
 GIT
   remote: https://github.com/PinnacleVenture/mobile-fu.git
