@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:SingularitySolutionsGroup/willow.git
-  revision: 3e2dd4364ebfe0fe2240433b15f89a71c95c0398
+  revision: 7fc971a6104ff05205d86993628677315d8b5ecc
   branch: master
   specs:
     willow (0.9.0)
@@ -164,7 +164,7 @@ GEM
     bunny (0.9.0.pre13)
       amq-protocol (>= 1.6.0)
     callsite (0.0.11)
-    celluloid (0.17.0)
+    celluloid (0.17.1.1)
       bundler
       celluloid-essentials
       celluloid-extras
@@ -175,7 +175,7 @@ GEM
       nenv
       rspec-logsplit (>= 0.1.2)
       timers (~> 4.0.0)
-    celluloid-essentials (0.20.1.1)
+    celluloid-essentials (0.20.2)
       bundler
       dotenv
       nenv
@@ -199,7 +199,7 @@ GEM
       nenv
       rspec-logsplit (>= 0.1.2)
       timers (~> 4.0.0)
-    celluloid-supervision (0.20.0)
+    celluloid-supervision (0.20.1)
       bundler
       dotenv
       nenv
@@ -311,7 +311,7 @@ GEM
     metaclass (0.0.4)
     mime-types (2.6.1)
     mini_portile (0.6.2)
-    minitest (5.7.0)
+    minitest (5.8.0)
     minitest-focus (1.1.0)
       minitest (>= 4, < 6)
     minitest-rails (2.1.1)
