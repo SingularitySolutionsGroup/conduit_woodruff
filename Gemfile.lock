@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:SingularitySolutionsGroup/willow.git
-  revision: 7fc971a6104ff05205d86993628677315d8b5ecc
+  revision: b4a6b384e81eb899aea7abe4cc9fe0fa76541b62
   branch: master
   specs:
     willow (0.9.0)
