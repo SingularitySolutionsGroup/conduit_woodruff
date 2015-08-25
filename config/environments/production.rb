@@ -50,7 +50,7 @@ Rails.application.configure do
   # Use a different logger for distributed setups.
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 
-  config.cache_store = PostgresCacheStore.new if defined?(PostgresCacheStore)
+  config.cache_store = PostgresCacheStore.new
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = "http://assets.example.com"
