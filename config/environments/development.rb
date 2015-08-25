@@ -11,10 +11,10 @@ Rails.application.configure do
 
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
-  config.action_controller.perform_caching = true
+  config.action_controller.perform_caching = false
 
   if config.action_controller.perform_caching
-    config.cache_store = PostgresCacheStore.new if defined?(PostgresCacheStore)
+    config.cache_store = PostgresCacheStore.new
   end
 
   # Don't care if the mailer can't send.
