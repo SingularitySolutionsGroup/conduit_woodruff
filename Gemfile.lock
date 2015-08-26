@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git@github.com:SingularitySolutionsGroup/roland.git
-  revision: ee98f083fa30b02a4fc974ac317d334d5bacec4f
+  revision: dadafa1c0acd8d734e9d9b95b13cf76d4ac52c1a
   specs:
     roland (0.0.1)
       activerecord-postgres-hstore
@@ -26,7 +26,7 @@ GIT
 
 GIT
   remote: git@github.com:SingularitySolutionsGroup/willow.git
-  revision: d85e436c102e01cfc4b2c6bf67ba15eaf72cc94d
+  revision: 179c034fcd40181db99c2f2ca3a06d910044db00
   branch: master
   specs:
     willow (0.9.0)
