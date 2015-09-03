@@ -53,12 +53,6 @@ GIT
       will_paginate
 
 GIT
-  remote: git@github.com:darrencauthon/gersion.git
-  revision: 02a90e956a06c72b080fcf787a0584d313c819a5
-  specs:
-    gersion (0.0.1)
-
-GIT
   remote: https://github.com/PinnacleVenture/mobile-fu.git
   revision: 0a083460751d6a7eac261ff03f9df17eceb5ce98
   specs:
@@ -254,6 +248,7 @@ GEM
       thor (~> 0.19.1)
     friendly_id (5.0.4)
       activerecord (>= 4.0.0)
+    gersion (1.0.0)
     google-api-client (0.8.2)
       activesupport (>= 3.2)
       addressable (~> 2.3)
@@ -580,7 +575,7 @@ DEPENDENCIES
   filepicker-rails (= 1.4.0)
   foreman
   friendly_id (>= 4.0.9)
-  gersion!
+  gersion
   haml (~> 4.0.0)
   htmlentities
   httparty

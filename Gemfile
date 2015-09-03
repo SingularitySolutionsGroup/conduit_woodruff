@@ -80,6 +80,8 @@ module WillowDependencies
 
     gemfile.gem 'ajax-datatables-rails', git: 'https://github.com/darrencauthon/ajax-datatables-rails.git'
 
+    gemfile.gem 'gersion'
+
     gemfile.group :development, :test do
       #gemfile.gem 'sqlite3' unless ENV['HOME'] == '/home/ubuntu'
       gemfile.gem 'minitest'
@@ -102,7 +104,6 @@ module WillowDependencies
     end
 
     gemfile.gem 'roland', git: 'git@github.com:SingularitySolutionsGroup/roland.git', tag: '1.0.0'
-    gemfile.gem 'gersion', git: 'git@github.com:darrencauthon/gersion.git'
 
   end
 
