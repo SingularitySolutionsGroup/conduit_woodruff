@@ -27,8 +27,8 @@ GIT
 
 GIT
   remote: git@github.com:SingularitySolutionsGroup/willow.git
-  revision: 94fb92ff25f149d089be3cc069ca93ac8410b624
-  tag: 4.0.1
+  revision: f2e32355dc503863d9932c1bbd2e26deaf5dee68
+  tag: 4.0.2
   specs:
     willow (0.9.0)
       activerecord-postgres-hstore
