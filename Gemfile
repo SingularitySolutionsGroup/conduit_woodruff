@@ -102,6 +102,7 @@ module WillowDependencies
     end
 
     gemfile.gem 'roland', git: 'git@github.com:SingularitySolutionsGroup/roland.git', tag: '1.0.0'
+    gemfile.gem 'gersion', git: 'git@github.com:darrencauthon/gersion.git'
 
   end
 
