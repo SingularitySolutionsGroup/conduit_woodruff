@@ -103,13 +103,13 @@ module WillowDependencies
       gemfile.gem "binding_of_caller"
     end
 
-    gemfile.gem 'roland', git: 'git@github.com:SingularitySolutionsGroup/roland.git', tag: '1.0.1'
+    gemfile.gem 'roland', git: 'git@github.com:SingularitySolutionsGroup/roland.git', tag: '1.0.2'
 
   end
 
 end
 
-gem 'willow', git: "git@github.com:SingularitySolutionsGroup/willow.git", tag: '4.0.6'
+gem 'willow', git: "git@github.com:SingularitySolutionsGroup/willow.git", tag: '4.0.7'
 #gem 'willow', path: '~/willow'
 
 if repo = ENV['CLIENT_SPECIFIC_GEM_REPO']
