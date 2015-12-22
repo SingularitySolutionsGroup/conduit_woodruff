@@ -104,7 +104,7 @@ module WillowDependencies
     end
 
     gemfile.gem 'roland', git: 'git@github.com:SingularitySolutionsGroup/roland.git', tag: '1.0.2'
-
+    gemfile.gem 'redis-session-store'
   end
 
 end
