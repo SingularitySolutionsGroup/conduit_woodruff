@@ -27,8 +27,8 @@ GIT
 
 GIT
   remote: git@github.com:SingularitySolutionsGroup/willow.git
-  revision: 20163080a9562100fff04c4c96706d43a997ed11
-  tag: 4.0.25
+  revision: cd28a86078cecfe2f75881f83c652b2ad6eb744c
+  tag: 4.0.26
   specs:
     willow (0.9.0)
       activerecord-postgres-hstore
@@ -159,7 +159,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     blankslate (3.1.3)
-    browser (1.0.1)
+    browser (1.1.0)
     bson (2.3.0)
     builder (3.2.2)
     bunny (0.9.0.pre13)
@@ -467,7 +467,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    stripe (1.31.0)
+    stripe (1.32.1)
       json (~> 1.8.1)
       rest-client (~> 1.4)
     strong_password (0.0.4)
@@ -522,7 +522,7 @@ GEM
     webrobots (0.1.1)
     whenever (0.9.4)
       chronic (>= 0.6.3)
-    will_paginate (3.0.7)
+    will_paginate (3.1.0)
     xml-simple (1.1.5)
     xml_hate (2.1.0)
       activesupport
