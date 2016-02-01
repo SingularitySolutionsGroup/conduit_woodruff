@@ -9,8 +9,8 @@ GIT
 
 GIT
   remote: git@github.com:SingularitySolutionsGroup/roland.git
-  revision: f466c0a5c260074255617d09e09dde5c00b1cba5
-  tag: 1.0.2
+  revision: cd6b6a97766ded20c1e73db93db5bec8eaa6e6d6
+  tag: 1.0.3
   specs:
     roland (0.0.1)
       activerecord-postgres-hstore
