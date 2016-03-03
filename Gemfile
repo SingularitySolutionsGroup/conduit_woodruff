@@ -56,7 +56,7 @@ module WillowDependencies
     gemfile.gem 'haml', '~> 4.0.0'
     gemfile.gem 'jquery-rails', '~> 2.0.0'
     gemfile.gem 'the_google', git: 'https://github.com/darrencauthon/the_google.git'
-    gemfile.gem 'browser'
+    gemfile.gem 'browser', '< 2.0.0'
 
     gemfile.gem 'devise', '>= 3.0.0'
     gemfile.gem 'babosa', '0.3.11'
@@ -103,13 +103,13 @@ module WillowDependencies
       gemfile.gem "binding_of_caller"
     end
 
-    gemfile.gem 'roland', git: 'git@github.com:SingularitySolutionsGroup/roland.git', tag: '1.0.3'
+    gemfile.gem 'roland', git: 'git@github.com:SingularitySolutionsGroup/roland.git', tag: '1.0.5'
     gemfile.gem 'redis-session-store'
   end
 
 end
 
-gem 'willow', git: "git@github.com:SingularitySolutionsGroup/willow.git", tag: '4.1.1'
+gem 'willow', git: "git@github.com:SingularitySolutionsGroup/willow.git", tag: '4.1.3'
 #gem 'willow', path: '~/willow'
 
 if repo = ENV['CLIENT_SPECIFIC_GEM_REPO']
