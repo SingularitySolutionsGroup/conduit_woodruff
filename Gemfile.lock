@@ -61,6 +61,15 @@ GIT
       rails
 
 GIT
+  remote: https://github.com/SingularitySolutionsGroup/the_google
+  revision: 04454b73a623695e6919f15a4dd2de4909afcc80
+  specs:
+    the_google (0.0.1)
+      activesupport
+      google-api-client
+      interchangeable
+
+GIT
   remote: https://github.com/darrencauthon/activerecord-postgres-hstore.git
   revision: 2d26a805c09647ffae9d0d4272748ba369d009b1
   specs:
@@ -75,15 +84,6 @@ GIT
   specs:
     ajax-datatables-rails (0.3.0)
       railties (>= 3.1)
-
-GIT
-  remote: https://github.com/darrencauthon/the_google.git
-  revision: 72c6e29c851152f338680711c5fd02957edd53df
-  specs:
-    the_google (0.0.1)
-      activesupport
-      google-api-client
-      interchangeable
 
 GIT
   remote: https://github.com/darrencauthon/tickle.git
