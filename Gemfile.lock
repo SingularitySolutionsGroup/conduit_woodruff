@@ -27,8 +27,8 @@ GIT
 
 GIT
   remote: git@github.com:SingularitySolutionsGroup/willow.git
-  revision: 302ef8a03ce6af3c107fc3be3ddc2d180fa831d6
-  tag: 4.1.4
+  revision: d8d874d884d1167d28ec4b48b4e4b3c0438d6da1
+  tag: 4.1.6
   specs:
     willow (0.9.0)
       activerecord-postgres-hstore
@@ -482,7 +482,7 @@ GEM
     timecop (0.7.1)
     timers (4.1.1)
       hitimes
-    tinymce-rails (4.3.3)
+    tinymce-rails (4.3.8)
       railties (>= 3.1.1)
     tinymce-rails-imageupload (4.0.16.beta)
       railties (>= 3.2, < 5)
