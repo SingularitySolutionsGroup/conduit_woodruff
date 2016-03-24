@@ -8,6 +8,22 @@ GIT
       ruby-hmac
 
 GIT
+  remote: git@github.com:SingularitySolutionsGroup/activerecord-postgres-hstore.git
+  revision: 2d26a805c09647ffae9d0d4272748ba369d009b1
+  specs:
+    activerecord-postgres-hstore (0.7.7)
+      activerecord (>= 3.1)
+      pg-hstore (>= 1.1.5)
+      rake
+
+GIT
+  remote: git@github.com:SingularitySolutionsGroup/ajax-datatables-rails.git
+  revision: 258f4d4cca2b38ac114dab68bc751a20f3346d2c
+  specs:
+    ajax-datatables-rails (0.3.0)
+      railties (>= 3.1)
+
+GIT
   remote: git@github.com:SingularitySolutionsGroup/roland.git
   revision: 945066494224c0df2efb7a966991461a0fe74dc3
   tag: 1.0.5
@@ -15,6 +31,14 @@ GIT
     roland (0.0.1)
       activerecord-postgres-hstore
       rails (>= 4.1.7)
+
+GIT
+  remote: git@github.com:SingularitySolutionsGroup/tickle.git
+  revision: c58b570d462d2264e01a1e929182013a9f906399
+  specs:
+    tickle (1.0.2)
+      activesupport
+      chronic (>= 0.2.3)
 
 GIT
   remote: git@github.com:SingularitySolutionsGroup/velocify.git
@@ -68,30 +92,6 @@ GIT
       activesupport
       google-api-client
       interchangeable
-
-GIT
-  remote: https://github.com/darrencauthon/activerecord-postgres-hstore.git
-  revision: 2d26a805c09647ffae9d0d4272748ba369d009b1
-  specs:
-    activerecord-postgres-hstore (0.7.7)
-      activerecord (>= 3.1)
-      pg-hstore (>= 1.1.5)
-      rake
-
-GIT
-  remote: https://github.com/darrencauthon/ajax-datatables-rails.git
-  revision: 258f4d4cca2b38ac114dab68bc751a20f3346d2c
-  specs:
-    ajax-datatables-rails (0.3.0)
-      railties (>= 3.1)
-
-GIT
-  remote: https://github.com/darrencauthon/tickle.git
-  revision: c58b570d462d2264e01a1e929182013a9f906399
-  specs:
-    tickle (1.0.2)
-      activesupport
-      chronic (>= 0.2.3)
 
 GIT
   remote: https://github.com/getsentry/raven-ruby.git

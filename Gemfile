@@ -13,8 +13,8 @@ module WillowDependencies
     gemfile.gem 'yell'
     gemfile.gem "sentry-raven", :git => "https://github.com/getsentry/raven-ruby.git"
     gemfile.gem 'poxa_assist', git: 'git@github.com:PinnacleVenture/poxa_assist.git'
-    #gemfile.gem 'activerecord-postgres-hstore'
-    gemfile.gem 'activerecord-postgres-hstore', git: 'https://github.com/darrencauthon/activerecord-postgres-hstore.git'
+
+    gemfile.gem 'activerecord-postgres-hstore', git: 'git@github.com:SingularitySolutionsGroup/activerecord-postgres-hstore.git'
     gemfile.gem 'seam'
     gemfile.gem 'seam-active_record'
     gemfile.gem 'seam-sidekiq'
@@ -74,11 +74,11 @@ module WillowDependencies
 
     gemfile.gem 'velocify', git: 'git@github.com:SingularitySolutionsGroup/velocify.git'
 
-    gemfile.gem 'tickle', git: 'https://github.com/darrencauthon/tickle.git'
+    gemfile.gem 'tickle', git: 'git@github.com:SingularitySolutionsGroup/tickle.git'
 
     gemfile.gem 'source_code'
 
-    gemfile.gem 'ajax-datatables-rails', git: 'https://github.com/darrencauthon/ajax-datatables-rails.git'
+    gemfile.gem 'ajax-datatables-rails', git: 'git@github.com:SingularitySolutionsGroup/ajax-datatables-rails.git'
 
     gemfile.gem 'gersion'
 
