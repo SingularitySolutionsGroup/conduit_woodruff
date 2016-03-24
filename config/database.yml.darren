@@ -8,7 +8,7 @@ development:
   encoding: unicode
   database: student_portal_development
   pool: 5
-  username: darrencauthon
+  username: ssg
   min_messages: warning
 
 

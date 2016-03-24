@@ -1,4 +1,4 @@
-Copyright (c) 2013 Darren Cauthon
+Copyright (c) 2013 Singularity Solutions Group
 
 MIT License
 
