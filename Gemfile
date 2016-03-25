@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 module WillowDependencies
 
   def self.load_my_dependencies gemfile
-    gemfile.gem 'rails', '4.1.7'
+    gemfile.gem 'rails', '4.1.15'
     gemfile.gem 'uuid'
     gemfile.gem 'subtle'
     gemfile.gem 'chronic'
