@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 module WillowDependencies
 
   def self.load_my_dependencies gemfile
-    gemfile.gem 'rails', '4.1.7'
+    gemfile.gem 'rails', '4.1.15'
     gemfile.gem 'uuid'
     gemfile.gem 'subtle'
     gemfile.gem 'chronic'
@@ -109,7 +109,7 @@ module WillowDependencies
 
 end
 
-gem 'willow', git: "git@github.com:SingularitySolutionsGroup/willow.git", tag: '4.1.6'
+gem 'willow', git: "git@github.com:SingularitySolutionsGroup/willow.git", tag: '4.1.7'
 #gem 'willow', path: '~/willow'
 
 if repo = ENV['CLIENT_SPECIFIC_GEM_REPO']
