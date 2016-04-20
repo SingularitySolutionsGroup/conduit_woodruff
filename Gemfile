@@ -103,7 +103,7 @@ module WillowDependencies
       gemfile.gem "binding_of_caller"
     end
     gemfile.gem 'roland', git: 'git@github.com:SingularitySolutionsGroup/roland.git', tag: '1.0.7'
-    #gemfile.gem 'roland', path: '~/willow'
+    #gemfile.gem 'roland', path: '~/roland'
     gemfile.gem 'redis-session-store'
   end
 
