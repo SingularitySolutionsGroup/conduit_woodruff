@@ -51,8 +51,8 @@ GIT
 
 GIT
   remote: git@github.com:SingularitySolutionsGroup/willow.git
-  revision: e8040d1d52226436b790d1da4071d78c9bdff91a
-  tag: 4.1.11
+  revision: da15c8c1937a5e63097aeb7cc072ab1b135422a3
+  tag: 4.1.12
   specs:
     willow (0.9.0)
       activerecord-postgres-hstore
@@ -199,7 +199,7 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
-    domain_name (0.5.20160216)
+    domain_name (0.5.20160310)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (0.11.1)
       dotenv-deployment (~> 0.0.2)
@@ -240,9 +240,9 @@ GEM
     haml (4.0.5)
       tilt
     hashery (2.1.1)
-    hashie (3.4.3)
+    hashie (3.4.4)
     hike (1.2.3)
-    hitimes (1.2.3)
+    hitimes (1.2.4)
     htmlentities (4.3.2)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
@@ -314,7 +314,7 @@ GEM
       bson (~> 2.2)
       connection_pool (~> 2.0)
       optionable (~> 0.2.0)
-    multi_json (1.11.2)
+    multi_json (1.12.0)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     net-http-digest_auth (1.4)
@@ -389,7 +389,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
     rake (11.1.2)
-    redis (3.2.2)
+    redis (3.3.0)
     redis-namespace (1.5.2)
       redis (~> 3.0, >= 3.0.4)
     redis-session-store (0.8.0)
@@ -466,8 +466,7 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    stripe (1.36.0)
-      json (~> 1.8.1)
+    stripe (1.42.0)
       rest-client (~> 1.4)
     strong_password (0.0.5)
     subtle (1.2.0)
