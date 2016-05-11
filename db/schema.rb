@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160509225503) do
+ActiveRecord::Schema.define(version: 20160509234710) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -233,7 +233,6 @@ ActiveRecord::Schema.define(version: 20160509225503) do
 
   create_table "form_generation_artifacts", force: true do |t|
     t.integer  "user_id"
-    t.integer  "form_id"
     t.text     "uuid"
     t.text     "form"
     t.text     "input"
