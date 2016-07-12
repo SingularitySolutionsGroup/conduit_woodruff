@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160418110300) do
+ActiveRecord::Schema.define(version: 20160509234710) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -231,6 +231,16 @@ ActiveRecord::Schema.define(version: 20160418110300) do
     t.string "hive_form_item_name"
   end
 
+  create_table "form_generation_artifacts", force: true do |t|
+    t.integer  "user_id"
+    t.text     "uuid"
+    t.text     "form"
+    t.text     "input"
+    t.text     "relevant_data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "form_historical_records", force: true do |t|
     t.integer  "form_id"
     t.integer  "user_id"
@@ -279,6 +289,7 @@ ActiveRecord::Schema.define(version: 20160418110300) do
     t.text     "replace_tag_data"
     t.string   "ip_address"
     t.integer  "step_id"
+    t.text     "form_generation_artifact_uuid"
   end
 
   create_table "forms", force: true do |t|
@@ -381,6 +392,7 @@ ActiveRecord::Schema.define(version: 20160418110300) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "details"
+    t.text     "form_generation_artifact_uuid"
   end
 
   create_table "login_records", force: true do |t|
@@ -713,6 +725,7 @@ ActiveRecord::Schema.define(version: 20160418110300) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "missing_secondary_signature_id"
+    t.text     "form_generation_artifact_uuid"
   end
 
   create_table "sent_text_messages", force: true do |t|
@@ -982,6 +995,7 @@ ActiveRecord::Schema.define(version: 20160418110300) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "details"
+    t.text     "form_generation_artifact_uuid"
   end
 
   create_table "web_requests", force: true do |t|
