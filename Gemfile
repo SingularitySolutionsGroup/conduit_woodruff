@@ -109,7 +109,7 @@ module WillowDependencies
 
 end
 
-gem 'willow', git: "git@github.com:SingularitySolutionsGroup/willow.git", tag: '4.2.1'
+gem 'willow', git: "git@github.com:SingularitySolutionsGroup/willow.git", tag: '4.2.2'
 #gem 'willow', path: '~/willow'
 
 if repo = ENV['CLIENT_SPECIFIC_GEM_REPO']
