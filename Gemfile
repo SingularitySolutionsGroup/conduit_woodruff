@@ -12,7 +12,7 @@ module WillowDependencies
     gemfile.gem 'foreman'
     gemfile.gem 'yell'
     gemfile.gem "sentry-raven", :git => "https://github.com/getsentry/raven-ruby.git"
-    gemfile.gem 'poxa_assist', git: 'git@github.com:PinnacleVenture/poxa_assist.git'
+    gemfile.gem 'poxa_assist', git: 'git@github.com:SingularitySolutionsGroup/poxa_assist.git'
 
     gemfile.gem 'activerecord-postgres-hstore', git: 'git@github.com:SingularitySolutionsGroup/activerecord-postgres-hstore.git'
     gemfile.gem 'seam'
@@ -50,7 +50,7 @@ module WillowDependencies
     gemfile.gem 'rack-plastic'
     gemfile.gem 'panic_board_data'
     gemfile.gem 'valid_email2'
-    gemfile.gem 'mobile-fu', git: 'https://github.com/PinnacleVenture/mobile-fu.git'
+    gemfile.gem 'mobile-fu', git: 'https://github.com/SingularitySolutionsGroup/mobile-fu.git'
     gemfile.gem 'unicorn'
     gemfile.gem 'pg'
     gemfile.gem 'haml', '~> 4.0.0'

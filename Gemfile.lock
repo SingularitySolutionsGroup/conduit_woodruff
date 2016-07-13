@@ -1,13 +1,4 @@
 GIT
-  remote: git@github.com:PinnacleVenture/poxa_assist.git
-  revision: 9ecdfa4a7210f4390887e2152ad1c61e87774601
-  specs:
-    poxa_assist (0.0.1)
-      json
-      pusher (~> 0.12.0)
-      ruby-hmac
-
-GIT
   remote: git@github.com:SingularitySolutionsGroup/activerecord-postgres-hstore.git
   revision: 2d26a805c09647ffae9d0d4272748ba369d009b1
   specs:
@@ -22,6 +13,15 @@ GIT
   specs:
     ajax-datatables-rails (0.3.0)
       railties (>= 3.1)
+
+GIT
+  remote: git@github.com:SingularitySolutionsGroup/poxa_assist.git
+  revision: 9ecdfa4a7210f4390887e2152ad1c61e87774601
+  specs:
+    poxa_assist (0.0.1)
+      json
+      pusher (~> 0.12.0)
+      ruby-hmac
 
 GIT
   remote: git@github.com:SingularitySolutionsGroup/roland.git
@@ -77,7 +77,7 @@ GIT
       will_paginate
 
 GIT
-  remote: https://github.com/PinnacleVenture/mobile-fu.git
+  remote: https://github.com/SingularitySolutionsGroup/mobile-fu.git
   revision: 0a083460751d6a7eac261ff03f9df17eceb5ce98
   specs:
     mobile-fu (1.2.2)
