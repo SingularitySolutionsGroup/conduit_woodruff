@@ -81,6 +81,7 @@ module WillowDependencies
     gemfile.gem 'ajax-datatables-rails', git: 'git@github.com:SingularitySolutionsGroup/ajax-datatables-rails.git'
 
     gemfile.gem 'gersion'
+    gemfile.gem 'phony'
 
     gemfile.group :development, :test do
       #gemfile.gem 'sqlite3' unless ENV['HOME'] == '/home/ubuntu'

@@ -355,6 +355,7 @@ GEM
     pdfcrowd (2.6.0)
     pg (0.17.1)
     pg-hstore (1.2.0)
+    phony (2.15.40)
     pusher (0.12.0)
       httpclient (~> 2.3.0)
       multi_json (~> 1.0)
@@ -576,6 +577,7 @@ DEPENDENCIES
   pdf-reader
   pdfcrowd
   pg
+  phony
   poxa_assist!
   rack-plastic
   rack-rewrite
