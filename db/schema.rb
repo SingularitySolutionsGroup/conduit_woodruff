@@ -133,6 +133,7 @@ ActiveRecord::Schema.define(version: 20160509234710) do
     t.string   "related_to_key"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "step_id"
   end
 
   create_table "checklists", force: true do |t|
@@ -168,6 +169,7 @@ ActiveRecord::Schema.define(version: 20160509234710) do
     t.string   "binding_type"
     t.integer  "form_id"
     t.text     "list_view_data"
+    t.hstore   "data"
   end
 
   create_table "custom_student_checklist_items", force: true do |t|
@@ -655,6 +657,8 @@ ActiveRecord::Schema.define(version: 20160509234710) do
     t.string   "last_browser_name"
     t.text     "avatar_url"
     t.string   "phone"
+    t.string   "api_key"
+    t.string   "standardized_cell_phone"
   end
 
   add_index "refinery_users", ["hive_lead_id"], name: "index_refinery_users_on_hive_lead_id", using: :btree
@@ -668,6 +672,7 @@ ActiveRecord::Schema.define(version: 20160509234710) do
     t.integer  "reviewer_user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "step_id"
   end
 
   create_table "scheduled_reports", force: true do |t|
@@ -959,6 +964,7 @@ ActiveRecord::Schema.define(version: 20160509234710) do
     t.text     "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "special_type"
   end
 
   create_table "user_tags_users", id: false, force: true do |t|
