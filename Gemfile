@@ -12,7 +12,7 @@ module WillowDependencies
     gemfile.gem 'foreman'
     gemfile.gem 'yell'
     gemfile.gem "sentry-raven", :git => "https://github.com/getsentry/raven-ruby.git"
-    gemfile.gem 'poxa_assist', git: 'git@github.com:SingularitySolutionsGroup/poxa_assist.git'
+    gemfile.gem 'poxa_assist', git: 'git@github.com:SingularitySolutionsGroup/poxa_assist.git', tag: '1.0.0'
 
     gemfile.gem 'activerecord-postgres-hstore', git: 'git@github.com:SingularitySolutionsGroup/activerecord-postgres-hstore.git'
     gemfile.gem 'seam'
@@ -110,7 +110,7 @@ module WillowDependencies
 
 end
 
-gem 'willow', git: "git@github.com:SingularitySolutionsGroup/willow.git", tag: '5.1.0'
+gem 'willow', git: "git@github.com:SingularitySolutionsGroup/willow.git", tag: '5.1.1'
 #gem 'willow', path: '~/willow'
 
 if repo = ENV['CLIENT_SPECIFIC_GEM_REPO']

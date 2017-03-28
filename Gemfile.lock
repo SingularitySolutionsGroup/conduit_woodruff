@@ -16,11 +16,12 @@ GIT
 
 GIT
   remote: git@github.com:SingularitySolutionsGroup/poxa_assist.git
-  revision: 9ecdfa4a7210f4390887e2152ad1c61e87774601
+  revision: 6990d416b79f54beccd5b12cc44e088a68ed95ed
+  tag: 1.0.0
   specs:
     poxa_assist (0.0.1)
       json
-      pusher (~> 0.12.0)
+      pusher (~> 1.2.0)
       ruby-hmac
 
 GIT
@@ -51,8 +52,8 @@ GIT
 
 GIT
   remote: git@github.com:SingularitySolutionsGroup/willow.git
-  revision: 683042e58039737053da175f0d6558794350d94c
-  tag: 5.1.0
+  revision: 75d3f55ec9df60b59812e133babe1ab436c0f3d2
+  tag: 5.1.1
   specs:
     willow (0.9.0)
       activerecord-postgres-hstore
@@ -250,7 +251,7 @@ GEM
     httparty (0.13.3)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    httpclient (2.3.4.1)
+    httpclient (2.8.3)
     httpi (1.1.1)
       rack
     i18n (0.7.0)
@@ -358,10 +359,11 @@ GEM
     pg-hstore (1.2.0)
     phony (2.15.40)
     public_suffix (2.0.5)
-    pusher (0.12.0)
-      httpclient (~> 2.3.0)
+    pusher (1.2.1)
+      httpclient (~> 2.7)
       multi_json (~> 1.0)
-      signature (~> 0.1.6)
+      pusher-signature (~> 0.1.8)
+    pusher-signature (0.1.8)
     rack (1.5.5)
     rack-contrib (1.2.0)
       rack (>= 0.9.1)
@@ -445,7 +447,6 @@ GEM
       celluloid (>= 0.14.1)
       ice_cube (~> 0.12.0)
       sidekiq (>= 2.16.0)
-    signature (0.1.8)
     signet (0.6.0)
       addressable (~> 2.3)
       extlib (~> 0.9)
