@@ -27,7 +27,7 @@ Create the necessary AWS components
 1) Create a new IAM user and permissions in AWS. Use the conduit_pti user as a template to attach an inline security policy to the new user. The new user should not be given console access. Where a security group is required the `production1` security group should be used for the production environment. Use the CLIENT_CODE for naming components.
 2) Create a redis database
 3) Create (or re-use an existing) RDS database
-4) Create an ELB
+4) Create an Elastic Load Balancing - ELB
 5) Create an S3 bucket called `conduit_CLIENT_CODE_pdfs`
 6) Create an S3 bucket called `conduit_CLIENT_CODE_packaging`
 7) Create an S3 bucket called `conduit_CLIENT_CODE_file_exchange`
