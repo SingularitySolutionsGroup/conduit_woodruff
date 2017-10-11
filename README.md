@@ -21,6 +21,7 @@ Create the necessary 3rd party sub accounts and take note of their respective ap
 Create two docker repositories at quay.io
 1) Name them conduit-CLIENT_CODE and conduit-CLIENT_CODE-deployment
 2) Configure the conduit-CLIENT_CODE repository to automatically build when the github repository receives a push to the production branch. The conduit-CLIENT_CODE-deployment docker repository shouldn't be associated with a github repository. See the infrastructure documentation at github.com/singularitySolutionsGroup/infrastructure regarding how the deployment process works.
+3) Create an event for conduit-CLIENT_CODE-deployment. Select that repository, click on the settings cog and you will see an option on that page to create a new event. The event is a Push to Repository, the notification is a Webhook POST, the url is https://jkqrrlp9zg.execute-api.us-east-1.amazonaws.com/production?api_key=308a4aecbe3aZ&project_id=client_code. Replace the end of the url 'client_code' with the name of the school, all undercase.
 
 Create the necessary AWS components
 ---
