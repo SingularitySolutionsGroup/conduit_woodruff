@@ -13,7 +13,7 @@ Create the necessary 3rd party sub accounts and take note of their respective ap
 ---
 1) twilio.com
 2) filepicker.io
-  1) Be sure to configure the S3 bucket on the account as well
+  2a) Be sure to configure the S3 bucket on the account as well
 3) pusher.com
 4) mandrillapp.com
 5) getsentry.com
