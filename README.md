@@ -11,9 +11,10 @@ Fork github.com/singularitySolutionsGroup/conduit naming it CLIENT_CODE. We're f
 
 Create the necessary 3rd party sub accounts and take note of their respective api keys
 ---
+Be sure to configure the S3 bucket on the account on the filepicker configuration
+
 1) twilio.com
 2) filepicker.io
-  * Be sure to configure the S3 bucket on the account as well
 3) pusher.com
 4) mandrillapp.com
 5) getsentry.com
