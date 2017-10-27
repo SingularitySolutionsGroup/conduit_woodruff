@@ -13,12 +13,14 @@ Create the necessary 3rd party sub accounts and take note of their respective ap
 ---
 Be sure to configure the S3 bucket on the account on the filepicker configuration
 
-1) twilio.com
-2) filepicker.io
-3) pusher.com
-4) mandrillapp.com
-5) getsentry.com
-6) Google Analtyics
+* twilio.com
+  * Add a web-hook to the new Twilio Phone Number
+  * Adding the Twilio account SID and Token to the Dockerfile in infrastructure will allow the new ADM to send chat messages as outbound texts to users. Functionality has been added to allow users to reply to the text, which then shows up on the chat window in ADM. Additional configurations in Twilio are required for this to work. Switch to the subaccount of the new school on Twilio. Click on ‘Phone Numbers.’ Click directly on the new phone number to bring up an edit page. Under ‘Messaging’ add a ‘message comes in’ webhook to https://your-new-school.diamondadm.com/twilio/receive as ‘HTTP GET’
+* filepicker.io
+* pusher.com
+* mandrillapp.com
+* getsentry.com
+* Google Analtyics
 
 Create two docker repositories at quay.io
 1) Name them conduit-CLIENT_CODE and conduit-CLIENT_CODE-deployment
@@ -57,9 +59,11 @@ Take a look at the other load balancers in the account to get a sense for how th
 
 Configure ECS
 ---
-1) Create a new service for the web server process. You can use the `conduit_pti_production_passenger` service as a template. Associate the ELB for this client with this ECS service.
-2) Create a new service for the sidekiq process. You can use the `conduit_pti_production_sidekiq` service as a template.
-3) Create a new service for the sidekiq pdf'ing process. You can use the `conduit_pti_production_sidekiq_pdf` service as a template.
+You will create three task definitions in Amazon’s EC2 Container Services.
+
+A menu on the left side lists Clusters, Task Definitions, and Repositories. Choose ‘Task Definitions’ and then click on ‘Create new Task Definition.’
+
+Follow the general naming convention of the other tasks already in place. You will create a task for the passenger, sidekiq, and sidekiq pdf processes. Model your new tasks after the task configurations for conduit-az-culinary. Use the new port mappings you chose earlier for the configuration of the new passenger task.
 
 Bootstrap the running system
 ---
