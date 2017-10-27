@@ -61,14 +61,14 @@ Take a look at the other load balancers in the account to get a sense for how th
 Configure ECS
 ---
 * Create the Services
- * Create a new service for the web server process. You can use the `conduit_pti_production_passenger` service as a template. Associate the ELB for this client with this ECS service.
- * Create a new service for the sidekiq process. You can use the `conduit_pti_production_sidekiq` service as a template.
- * Create a new service for the sidekiq pdf'ing process. You can use the `conduit_pti_production_sidekiq_pdf` service as a template.
+  * Create a new service for the web server process. You can use the `conduit_pti_production_passenger` service as a template. Associate the ELB for this client with this ECS service.
+  * Create a new service for the sidekiq process. You can use the `conduit_pti_production_sidekiq` service as a template.
+  * Create a new service for the sidekiq pdf'ing process. You can use the `conduit_pti_production_sidekiq_pdf` service as a template.
 
 * Create three task definitions in Amazon’s EC2 Container Services.
- * Passenger
- * Sidekiq
- * Sidekiq PDF
+  * Passenger
+  * Sidekiq
+  * Sidekiq PDF
 
 A menu on the left side lists Clusters, Task Definitions, and Repositories. Choose ‘Task Definitions’ and then click on ‘Create new Task Definition.’
 
