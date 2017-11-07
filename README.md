@@ -26,7 +26,7 @@ Create two docker repositories at quay.io
 * Name them conduit-CLIENT_CODE and conduit-CLIENT_CODE-deployment
 * Configure the conduit-CLIENT_CODE repository to automatically build when the github repository receives a push to the production branch. The conduit-CLIENT_CODE-deployment docker repository shouldn't be associated with a github repository. See the infrastructure documentation at github.com/singularitySolutionsGroup/infrastructure regarding how the deployment process works. 
 * Create an event for conduit-CLIENT_CODE-deployment. Select that repository, click on the settings cog and you will see an option on that page to create a new event. The event is a Push to Repository, the notification is a Webhook POST, the url is https://jkqrrlp9zg.execute-api.us-east-1.amazonaws.com/production?api_key=308a4aecbe3aZ&project_id=client_code. Replace the end of the url 'client_code' with the name of the school, all undercase.
-* In the conduit-CLIENT_CODE, navigate to the settings section and add three events/notifications targeting the slack channel notifications. The web hook url is (https://hooks.slack.com/services/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). Create one for build starting, a successful completion, and a failed build.
+* In the conduit-CLIENT_CODE, navigate to the settings section and add three events/notifications targeting the slack channel notifications. The web hook url is (https://hooks.slack.com/services/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). Create one for build starting, a successful completion, and a failed build. You do not need to add the refs on this as it will only happen when the build has started, completed, or failed.
 
 Create the necessary AWS components
 ---
