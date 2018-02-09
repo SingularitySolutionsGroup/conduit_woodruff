@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   engines.select { |x| x }.each { |e| mount e, at: '/' }
 
   # LeadEntry.setup_routing(self, '/leadentry', { match: 'name of the lead entry form' } )
-  # WalkIn.setup_routing(self,    '/walkin',    { match: 'name of the walk in form' } )
+  WalkIn.setup_routing(self,    '/self-service',    { match: 'self service' } )
 end
