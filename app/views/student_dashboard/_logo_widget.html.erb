@@ -1,0 +1,15 @@
+<div class="widget secondary-logo-widget">
+  <span style="margin-bottom: 20px;" class="hidden-xs hidden-sm hidden-md box non-collapsible secondary-logo-container"><img src="/assets/images/secondary-logo.png"></span>
+  <div ng-show="show_agent_information()" class="blue-header-box representative">
+    <h5>Your Admissions Representative</h5>
+    <div class="representative-container">
+      <img ng-show="support_details_view.agent_image_url != null" src="{{support_details_view.agent_image_url}}" class="pull-left" id="agent_image" />
+      <h4>{{support_details_view.agent_name}}</h4>
+      <div class="gray" style="min-height: 15px; min-width: 200px;">{{support_details_view.agent_phone}}</div>
+      <div class="gray" >
+        <a href="{{support_details_view.agent_facebook}}" target="_blank" ng-show="support_details_view.agent_facebook != null"><i class="fa fa-facebook"></i></a>
+        <a href="mailto:{{support_details_view.agent_email}}" ng-show="support_details_view.agent_email != null">{{support_details_view.agent_email}}</a>
+      </div>
+    </div>
+  </div>
+</div>

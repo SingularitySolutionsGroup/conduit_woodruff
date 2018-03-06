@@ -14,7 +14,7 @@ unless Object.const_defined?('ClientConfiguration')
     end
 
     def self.school_name
-      'West Western University'
+      'Texas Barber College'
     end
 
     def self.assets_directory
@@ -22,7 +22,7 @@ unless Object.const_defined?('ClientConfiguration')
     end
 
     def self.email_prefix
-      'west-western-staging-student-portal'
+      'texas-barber-college-student-portal'
     end
   end
 end

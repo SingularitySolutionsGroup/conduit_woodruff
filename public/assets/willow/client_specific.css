@@ -1,0 +1,54 @@
+/* Main Navbar */
+#main-navbar {
+  background: #fff;
+}
+#main-navbar img{
+  height: 45px;
+  padding-bottom: 5px;
+  padding-top: 1px !important;
+  width: auto !important;
+}
+#main-navbar a:hover {
+  background: #e3e0dd;
+}
+#main-navbar .nav > li.active > a, #main-navbar .messages > li.active > a, #main-navbar .nav > li.open > a, #main-navbar .messages > li.open > a, #main-navbar .nav > li.open > a:hover, #main-navbar .messages > li.open > a:hover {
+  background-color: #e3e0dd;
+}
+#main-navbar .nav > li > a {
+  color: black;
+}
+#main-navbar a {
+  color: black;
+}
+.navbar-nav {
+    margin: 5px;
+}
+nav .dropdown-menu {
+    background-color: #fff;
+    border-top: none;
+    border: solid 1px #e3e0dd;
+    color: #e3e0dd;
+}
+
+/* Secondary Logo Container */
+.secondary-logo-container {
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  margin: 0 auto !important;
+}
+.secondary-logo-container img{
+  display: block;
+  margin: auto;
+}
+
+/* Chat */
+.blue-header-box {
+  border: 3px solid #3a3a3a !important;
+}
+.blue-header-box h5{
+  background-color: #3a3a3a;
+}
+
+/* avatar */
+.author.avatar.pull-left.img-circle {
+  margin-top: -20px;
+}
