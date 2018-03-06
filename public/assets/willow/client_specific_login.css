@@ -1,0 +1,42 @@
+body{
+  background-color: #e3e0dd;
+}
+.login-logo-container img {
+  width: 300px;
+  background-color: #fff;
+}
+.login-logo-container {
+  background-image: none !important;
+  background-color: #fff !important;
+}
+.site.signin-main{
+  background-color: #e3e0dd
+}
+.site.signin-main .signin {
+  background-color: #a42222; 
+}
+.site.signin-main .signin:hover {
+  background-color: #7c0f0e;
+  border: 1px solid #fff;
+}
+.site.signin-main .form-header{
+  background-color:  #fff
+}
+.site.signin-main .form-footer {
+  background-color: #000000;
+}
+.site.signin-main .form-footer .fa.fa-rocket {
+  color: #fff;
+  font-size: 12pt;
+  margin-right: 6px;
+}
+.site.signin-main .form-footer .fa.fa-unlock-alt{
+  color: #fff;
+  font-size: 12pt;
+  margin-right: 6px;
+  background-color: #000000;
+}
+
+.site.signin-main .form-main {
+  background-color: #fff !important;
+}

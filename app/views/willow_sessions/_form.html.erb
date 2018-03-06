@@ -1,0 +1,48 @@
+<%= render partial: 'willow_sessions/login_styles' %>
+<section id="signin_main" class="site signin-main">
+  <div class="section-content">
+    <div class="wrap">
+      <div class="container">   
+        <div class="form-wrap">
+          <div class="row">
+            <div id="form_1">
+              <div class="form-header">
+                <div class="login-logo-container">
+                  <img src="/assets/images/login-logo.png" />
+                </div>
+              </div>
+              <div class="form-main">
+                <%= form_for resource, :as => resource_name, :url => '/refinery/users/login' do |f| %>
+                  <div class="form-group">
+                    <ul class="login-error" id="message">
+                      <% flash.each do |message| %>
+                          <li><%=message[1] %></li>
+                      <% end %>
+                    </ul>
+                    <input type="text" id="un_1" class="form-control" placeholder="Email Address" name="refinery_user[login]" required="required" style="height:40px;padding: 0 0 0 10px;" />
+                    <input type="password" id="pw_1" class="form-control" placeholder="Password" required="required" name="refinery_user[password]" style="height:40px;padding: 0 0 0 10px;" />
+                  </div>
+                  <button onclick="$('#new_refinery_user').submit();return(false);" id="signIn_1" class="btn btn-block signin">Sign In</button>
+                <% end %>
+              </div>
+              <div class="form-footer">
+                <div class="row">
+                  <div class="col-xs-7">
+                    <i class="fa fa-unlock-alt"></i>
+                    <a href="/forgot-password" id="forgot_from_1">Forgot password?</a>
+                  </div>
+                  <% if LoginToken.enabled? %>
+                  <div class="col-xs-5">
+                    <i class="fa fa-rocket"></i>
+                    <a href="/quick-access" id="login_token">Quick Access?</a>
+                  </div>
+                  <% end %>
+                </div>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
