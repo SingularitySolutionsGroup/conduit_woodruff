@@ -47,3 +47,8 @@ nav .dropdown-menu {
 .blue-header-box h5{
   background-color: #3a3a3a;
 }
+
+/* avatar */
+.author.avatar.pull-left.img-circle {
+  margin-top: -20px;
+}
