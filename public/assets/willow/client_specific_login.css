@@ -13,7 +13,8 @@ body{
   background-color: #e3e0dd
 }
 .site.signin-main .signin {
-  background-color: #a42222; 
+  background-color: #a42222;
+  transition: background-color 50ms linear;
 }
 .site.signin-main .signin:hover {
   background-color: #7c0f0e;

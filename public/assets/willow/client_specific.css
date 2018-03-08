@@ -1,3 +1,8 @@
+body {
+  background-image: none !important;
+  background-color: #e3e0dd !important;
+}
+
 /* Main Navbar */
 #main-navbar {
   background: #fff;
@@ -16,6 +21,7 @@
 }
 #main-navbar .nav > li > a {
   color: black;
+  margin: 0px 2px 0px 2px;
 }
 #main-navbar a {
   color: black;
@@ -39,16 +45,65 @@ nav .dropdown-menu {
   display: block;
   margin: auto;
 }
-
-/* Chat */
-.blue-header-box {
-  border: 3px solid #3a3a3a !important;
-}
-.blue-header-box h5{
-  background-color: #3a3a3a;
-}
-
 /* avatar */
 .author.avatar.pull-left.img-circle {
   margin-top: -20px;
+}
+
+/* Application Steps */
+.badge{
+  background-color: rgba(164, 11, 13, 0.75);
+}
+.application-container {
+  box-shadow: none;
+}
+
+/* secondary-logo widget  */
+.widget.secondary-logo-widget {
+  background-color: #fff;
+  border: 1px solid lightgray;
+}
+.widget.secondary-logo-widget .box {
+  border: none;
+}
+
+/* chat */
+.blue-header-box {
+  border: 3px solid black !important;
+}
+.blue-header-box h5{
+  background-color: black;
+}
+.blue-header-box .btn-warning {
+  color: #fff;
+  background-color: #a40b0d;
+  border-color: rgba(164, 11, 13, 0.75);
+}
+.social-container a {
+  color: black;
+  font-size: 17px;
+}
+.social-container a:hover {
+  color: #a40b0d;
+  text-decoration: none;
+}
+.myProgress .box .application-steps{
+  background-color: #fff;
+  border: none;
+}
+
+/* Connect, my progress  */
+.myProgress .box{
+  background-color: #fff;
+  border: 1px solid lightgray;
+}
+.connect .box .application-steps {
+    background-color: #fff;
+    border: none;
+}
+
+/* My Docs */
+.skipped.application-steps.application-steps-first {
+  border: none !important;
+  background-color: #e3e0dd;
 }
