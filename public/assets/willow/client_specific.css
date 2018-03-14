@@ -27,13 +27,13 @@ body {
   color: black;
 }
 .navbar-nav {
-    margin: 5px;
+  margin: 5px;
 }
 nav .dropdown-menu {
-    background-color: #fff;
-    border-top: none;
-    border: solid 1px #e3e0dd;
-    color: #e3e0dd;
+  background-color: #fff;
+  border-top: none;
+  border: solid 1px #e3e0dd;
+  color: #e3e0dd;
 }
 
 /* Secondary Logo Container */
@@ -98,8 +98,8 @@ nav .dropdown-menu {
   border: 1px solid lightgray;
 }
 .connect .box .application-steps {
-    background-color: #fff;
-    border: none;
+  background-color: #fff;
+  border: none;
 }
 
 /* My Docs */
@@ -112,5 +112,10 @@ nav .dropdown-menu {
 .form_header {
   background-color: #e3e0dd !important;
   background-image: none !important;
+}
+.form-header-text {
   color: black;
+}
+.panel-heading {
+  padding: 33px 16px;
 }
