@@ -112,6 +112,7 @@ nav .dropdown-menu {
 .form_header {
   background-color: #e3e0dd !important;
   background-image: none !important;
+  border-bottom: none !important;
 }
 .form-header-text {
   color: black;
