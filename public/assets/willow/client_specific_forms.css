@@ -1,0 +1,11 @@
+/* Stlyes for the form builder go in client_specific.css */
+/* This will specifically target the modal, pdf and full-screen previews */
+.form_header {
+  background: none !important;
+  background-color: #e3e0dd !important;
+  background-image: none !important;
+  border-bottom: none !important;
+}
+.form-header-text {
+  color: black !important;
+}
