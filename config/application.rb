@@ -14,7 +14,7 @@ unless Object.const_defined?('ClientConfiguration')
     end
 
     def self.school_name
-      'Texas Barber College'
+      'Digital Film Academy'
     end
 
     def self.assets_directory
@@ -22,7 +22,7 @@ unless Object.const_defined?('ClientConfiguration')
     end
 
     def self.email_prefix
-      'texas-barber-college-student-portal'
+      'digital-film-academy-student-portal'
     end
   end
 end
