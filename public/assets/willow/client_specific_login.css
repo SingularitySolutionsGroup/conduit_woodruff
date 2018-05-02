@@ -13,18 +13,18 @@ body{
   background-color: #e3e0dd
 }
 .site.signin-main .signin {
-  background-color: #a42222;
+  background-color: #05AF6B;
   transition: background-color 50ms linear;
 }
 .site.signin-main .signin:hover {
-  background-color: #7c0f0e;
+  background-color: #057c4c;
   border: 1px solid #fff;
 }
 .site.signin-main .form-header{
   background-color:  #fff
 }
 .site.signin-main .form-footer {
-  background-color: #000000;
+  background-color: #05AF6B;
 }
 .site.signin-main .form-footer .fa.fa-rocket {
   color: #fff;
@@ -35,7 +35,7 @@ body{
   color: #fff;
   font-size: 12pt;
   margin-right: 6px;
-  background-color: #000000;
+  background-color: #05AF6B;
 }
 
 .site.signin-main .form-main {
