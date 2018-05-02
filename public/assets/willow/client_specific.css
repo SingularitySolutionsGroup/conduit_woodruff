@@ -3,9 +3,16 @@ body {
   background-color: #e3e0dd !important;
 }
 
+.site-colors {
+  color: #05AF6B;
+  color: #2986C3;
+  color: #BD202E;
+}
+
 /* Main Navbar */
 #main-navbar {
   background: #fff;
+  text-shadow: none !important;
 }
 #main-navbar img{
   height: 45px;
@@ -13,11 +20,18 @@ body {
   padding-top: 1px !important;
   width: auto !important;
 }
+#main-navbar .nav > li > a, #main-navbar .messages > li > a {
+  text-shadow: none;
+}
 #main-navbar a:hover {
-  background: #e3e0dd;
+  background: #fff;
+  color: #2986C3 !important;
 }
 #main-navbar .nav > li.active > a, #main-navbar .messages > li.active > a, #main-navbar .nav > li.open > a, #main-navbar .messages > li.open > a, #main-navbar .nav > li.open > a:hover, #main-navbar .messages > li.open > a:hover {
-  background-color: #e3e0dd;
+  background: #fff;
+  color: #2986C3;
+  text-decoration: underline;
+  -webkit-box-shadow: none;
 }
 #main-navbar .nav > li > a {
   color: black;
@@ -44,6 +58,7 @@ nav .dropdown-menu {
 .secondary-logo-container img{
   display: block;
   margin: auto;
+  max-width: 100%;
 }
 /* avatar */
 .author.avatar.pull-left.img-circle {
@@ -52,7 +67,7 @@ nav .dropdown-menu {
 
 /* Application Steps */
 .badge{
-  background-color: rgba(164, 11, 13, 0.75);
+  background-color: rgba(5, 175, 107, 0.75);
 }
 .application-container {
   box-shadow: none;
@@ -69,22 +84,22 @@ nav .dropdown-menu {
 
 /* chat */
 .blue-header-box {
-  border: 3px solid black !important;
+  border: 3px solid #2986C3 !important;
 }
 .blue-header-box h5{
-  background-color: black;
+  background-color: #2986C3;
 }
 .blue-header-box .btn-warning {
   color: #fff;
-  background-color: #a40b0d;
-  border-color: rgba(164, 11, 13, 0.75);
+  background-color: #BD202E;
+  border-color: rgba(189, 32, 46, 0.75);
 }
 .social-container a {
   color: black;
   font-size: 17px;
 }
 .social-container a:hover {
-  color: #a40b0d;
+  color: #2986C3;
   text-decoration: none;
 }
 .myProgress .box .application-steps{
