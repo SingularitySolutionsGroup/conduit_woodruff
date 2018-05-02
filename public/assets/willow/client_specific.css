@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+h1, h2, h3, h4, h5, p, blockquote, pre, div, a, .sansHeader {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+
 body {
   background-image: none !important;
   background-color: #e3e0dd !important;
 }
 
-.site-colors {
+/*
+  site-colors {
   color: #05AF6B;
   color: #2986C3;
   color: #BD202E;
-}
+*/
 
 /* Main Navbar */
 #main-navbar {
@@ -30,12 +39,12 @@ body {
 #main-navbar .nav > li.active > a, #main-navbar .messages > li.active > a, #main-navbar .nav > li.open > a, #main-navbar .messages > li.open > a, #main-navbar .nav > li.open > a:hover, #main-navbar .messages > li.open > a:hover {
   background: #fff;
   color: #2986C3;
-  text-decoration: underline;
   -webkit-box-shadow: none;
 }
 #main-navbar .nav > li > a {
   color: black;
   margin: 0px 2px 0px 2px;
+  font-size: 14px;
 }
 #main-navbar a {
   color: black;
@@ -67,7 +76,7 @@ nav .dropdown-menu {
 
 /* Application Steps */
 .badge{
-  background-color: rgba(5, 175, 107, 0.75);
+  background-color: rgba(5, 175, 107, 1);
 }
 .application-container {
   box-shadow: none;
