@@ -159,3 +159,8 @@ nav .dropdown-menu > li > a{
 .panel-heading {
   padding: 33px 16px;
 }
+
+/* Users & Settings Views */
+.row.ng-view-container{
+  margin-top: 35px;
+}
