@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
+
+h1, h2, h3, h4, h5, p, blockquote, pre, div, a, .sansHeader {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+
 body{
-  background-color: #e3e0dd;
+  background-color: #333333;
 }
 .login-logo-container img {
   width: 300px;
@@ -10,32 +18,35 @@ body{
   background-color: #fff !important;
 }
 .site.signin-main{
-  background-color: #e3e0dd
+  background-color: #333333
 }
 .site.signin-main .signin {
-  background-color: #05AF6B;
+  background-color: #2986C3;
   transition: background-color 50ms linear;
 }
 .site.signin-main .signin:hover {
-  background-color: #057c4c;
+  background-color: #1c5d86;
   border: 1px solid #fff;
 }
 .site.signin-main .form-header{
   background-color:  #fff
 }
 .site.signin-main .form-footer {
-  background-color: #05AF6B;
+  background-color: #000000;
+  text-transform: uppercase;
+  font-size: 8px;
 }
 .site.signin-main .form-footer .fa.fa-rocket {
   color: #fff;
   font-size: 12pt;
   margin-right: 6px;
+  margin-top: 4px;
 }
 .site.signin-main .form-footer .fa.fa-unlock-alt{
   color: #fff;
   font-size: 12pt;
-  margin-right: 6px;
-  background-color: #05AF6B;
+  margin-right: 0px;
+  background-color: #000000;
 }
 
 .site.signin-main .form-main {
