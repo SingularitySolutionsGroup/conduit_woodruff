@@ -164,3 +164,8 @@ nav .dropdown-menu > li > a{
 .row.ng-view-container{
   margin-top: 35px;
 }
+
+/* Settings > Rep view tab */
+.col-md-12.ng-view-container.ng-scope {
+  margin-top: 35px;
+}
