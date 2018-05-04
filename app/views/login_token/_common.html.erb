@@ -1,0 +1,57 @@
+<style>
+    .login-logo-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    .site.signin-main .form-main {
+        background-color: #FFF;
+        padding: 10px 50px;
+    }
+    .site.signin-main .form-header {
+        padding-bottom: 0px;
+    }
+</style>
+<section id="signin_main" class="site signin-main">
+  <div class="section-content">
+    <div class="wrap">
+      <div class="container">   
+        <div class="form-wrap">
+          <div class="row">
+            <div id="form_1">
+              <div class="form-header">
+                <div class="login-logo-container">
+                  <img src="/assets/images/login-logo.png" style="width:100%" />
+                </div>
+              </div>
+              <div class="form-main">
+                <form id="new_refinery_user" class="new_refinery_user" action="/quick-access" method="post">
+                  <div class="form-group">
+                    <ul class="login-error" id="message">
+                        <% if flash[:error] %>
+                          <li class="login-error">
+                            <%= flash[:error] %>
+                          </li>
+                        <% end %>
+                    </ul>
+                    <div>Please enter your quick access token below.  If you don't have a token you may have one texted to your cell phone by clicking <a href="/forgot-password">here</a>.<br /><br /></div>
+                    <input type="text" name="token" class="form-control" placeholder="Token" />
+                  </div>
+                  <button onclick="$('#new_refinery_user').submit();return(false);" class="btn btn-block signin">Submit</button>
+                </form>
+              </div>
+              <div class="form-footer">
+                <div class="row">
+                  <div class="col-xs-12">
+                    &nbsp;
+                  </div>
+                </div>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
