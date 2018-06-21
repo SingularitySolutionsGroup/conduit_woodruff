@@ -1,0 +1,134 @@
+<%= render partial: 'shared/includes' %>
+
+<div class="row my-documents">
+    <div class="col-md-8" ng-controller="StudentDocumentsController">
+        <div ng-repeat="step_group in application.step_groups">
+            <div class="box collapsible application-container">
+                <div class="parent-step">
+                  <div class="parent-step-container">
+                    <div class="pull-left pie"><span class="circled-number">{{$index+1}}</span></div>
+                    <h2>{{step_group.name}}</h2>
+                    <p ng-repeat="step in get_steps_with_ready_documents_from_step_group(step_group)" class="child-step">
+                        {{step.name}}
+                        <span class="pull-right" ng-show="step.can_download">
+                            <a href="/my_documents/stream_pdf?step_id={{step.id}}&submission_id={{step.submission_id}}" class="btn btn-primary" target="_blank">Download</a>
+                        </span>
+                        <span class="pull-right" ng-hide="step.can_download">
+                            <a href="#" class="btn btn-primary">Complete</a>
+                        </span>
+                    </p>
+                    <p ng-show="get_steps_with_ready_documents_from_step_group(step_group).length == 0">
+                        There are no documents to view at this time.
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="col-md-4">
+    <div class="myProgress">
+      <span class="sansHeader">Files You've Uploaded</span>
+      <div class="box non-collapsible file-uploads widget">
+        <%= form_for @file_upload, url: '/my_documents/create_upload' do |f| %>
+          <% if @file_uploads.present? %>
+            <% @file_uploads.each_with_index do |file_upload, index| %>
+              <% if index == 0 %>
+              <div class="skipped application-steps application-steps-first" style="border-top: solid 1px #ddd">
+              <% else %>
+              <div class="skipped application-steps">
+              <% end %>
+                <span class="badge pull-left"><%= index + 1 %></span>
+                <span>
+                  <a target="_blank" href="<%= file_upload.url %>">
+                    <%= truncate file_upload.visible_name, :length => 25 %>
+                  </a>
+                </span>
+              </div>
+            <% end %>
+          <% else %>
+              <div class="skipped application-steps application-steps-first" style="border-top: solid 1px #ddd">
+                <span>
+                  No Files Yet
+                </span>
+              </div>
+          <% end %>
+
+          <div id="file_upload_button" style="display:none;">
+            <%= f.hidden_field :filepicker_data %>
+            <%= f.submit %>
+          </div>
+
+
+          <div>
+            <h4>Upload a File for</h4>
+            <select class="form-control" name="file_upload[upload_target]" ng-model="upload_target">
+              <option value="Admissions">Admissions</option>
+              <option value="FA">FA</option>
+            </select>
+            <button ng-hide="upload_target + '' == ''" class="btn btn-primary my-documents-upload-button" type="button" onclick="getFileUpload();return(false);">
+                Upload the File
+            </button>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="myProgress">
+      <span class="sansHeader">Files From Your Rep</span>
+      <div class="box non-collapsible file-downloads widget">
+        <% if @file_downloads.present? %>
+          <% @file_downloads.each_with_index do |file_download, index| %>
+            <% if index == 0 %>
+            <div class="skipped application-steps application-steps-first" style="border-top: solid 1px #ddd">
+            <% else %>
+            <div class="skipped application-steps">
+            <% end %>
+              <span class="badge pull-left"><%= index + 1 %></span>
+              <span>
+                <a target="_blank" href="/my_documents/stream_download/<%= file_download.id %>">
+                  <%= truncate file_download.visible_name, :length => 25 %>
+                </a>
+              </span>
+            </div>
+          <% end %>
+        <% else %>
+            <div class="skipped application-steps application-steps-first" style="border-top: solid 1px #ddd">
+              <span>
+                No Files Yet
+              </span>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+    function getFileUpload(){
+        filepicker.pickAndStore({mimetypes: ['image/*,application/pdf,text/*,application/msword,video/mp4,video/x-m4v,video/*'], multiple: false},{},function(data){
+          var data = JSON.stringify(data);
+          $('#file_upload_filepicker_data').val(data);
+          $('#new_file_upload').submit();
+        });
+    }
+    var StudentDocumentsController;
+    StudentDocumentsController = function($scope) {
+    $scope.application = <%=raw(ViewModel.build_hash(:user_application, current_refinery_user.get_application(@user_application_id), { viewer: current_refinery_user }).to_json) %>;
+        $scope.get_steps_with_ready_documents_from_step_group = function(step_group) {
+            var step, steps, _i, _len, _ref;
+            steps = [];
+            _ref = step_group.steps;
+            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+              step = _ref[_i];
+              if (step.status === 'Complete' && step.pdf_filename !== '' && step.pdf_filename !== null && step.pdf_filename !== void 0) {
+                steps.push(step);
+              }
+            }
+            return steps;
+        };
+    }
+</script>
+<%= render partial: 'shared/filepicker' %>
+<%= render partial: 'student_dashboard/student_dashboard_module_js' %>
