@@ -105,7 +105,7 @@ StudentDocumentsController = ($q, $scope, $http, $modal, selected_application_id
     steps
 
   $scope.uploadTheFile = ->
-    filepicker.pickAndStore({mimetypes: ['image/*,application/pdf,text/*,application/msword,video/mp4,video/x-m4v,video/*''], multiple: false},{}, (filepicker_data) ->
+    filepicker.pickAndStore({mimetypes: ['image/*,application/pdf,text/*,application/msword,video/mp4,video/x-m4v,video/*'], multiple: false},{}, (filepicker_data) ->
       $http.post("/students/create_download/#{user_id}", {
                                                            file_download: {
                                                                             user_application_id: selected_application_id_retriever.get_user_application_id(),
