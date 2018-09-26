@@ -16,11 +16,14 @@ body {
   color: #05AF6B;
   color: #2986C3;
   color: #BD202E;
+  
+  color: #002f55;
+  color: #ab0d26;
 */
 
 /* Main Navbar */
 #main-navbar {
-  background: #000000;
+  background: #002f55;
   text-shadow: none !important;
 }
 #main-navbar img{
@@ -33,11 +36,11 @@ body {
   text-transform: uppercase;
 }
 #main-navbar a:hover {
-  background: #000000;
+  background: #002f55;
   color: #2986C3 !important;
 }
 #main-navbar .nav > li.active > a, #main-navbar .messages > li.active > a, #main-navbar .nav > li.open > a, #main-navbar .messages > li.open > a, #main-navbar .nav > li.open > a:hover, #main-navbar .messages > li.open > a:hover {
-  background: #000000;
+  background: #002f55;
   color: #2986C3;
   -webkit-box-shadow: none;
 }
@@ -54,7 +57,7 @@ body {
   margin: 5px;
 }
 nav .dropdown-menu {
-  background-color: #000000;
+  background-color: #002f55;
   border-top: none;
   border: solid 1px #363636;
 }
@@ -70,7 +73,7 @@ nav .dropdown-menu > li > a{
 
 /* Secondary Logo Container */
 .secondary-logo-container {
-  background-image: linear-gradient(to bottom, #fff, #fff);
+  background-image: linear-gradient(to bottom, #002f55, #002f55);
   margin: 0 auto !important;
 }
 .secondary-logo-container img{
