@@ -59,7 +59,7 @@ body {
 nav .dropdown-menu {
   background-color: #002f55;
   border-top: none;
-  border: solid 1px #363636;
+  border: solid 1px #002f55;
 }
 nav .dropdown-menu > li > a{
   color: #fff;
@@ -111,10 +111,10 @@ nav .dropdown-menu > li > a{
 
 /* chat */
 .blue-header-box {
-  border: 3px solid #000000 !important;
+  border: 3px solid #002f55 !important;
 }
 .blue-header-box h5{
-  background-color: #000000;
+  background-color: #002f55;
 }
 .blue-header-box .btn-warning {
   color: #fff;
@@ -152,7 +152,7 @@ nav .dropdown-menu > li > a{
 
 /* Forms */
 .form_header {
-  background-color: #000000 !important;
+  background-color: #002f55 !important;
   background-image: none !important;
   border-bottom: none !important;
 }

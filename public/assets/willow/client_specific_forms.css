@@ -2,10 +2,13 @@
 /* This will specifically target the modal, pdf and full-screen previews */
 .form_header {
   background: none !important;
-  background-color: #000000 !important;
+  background-color: #002f55 !important;
   background-image: none !important;
   border-bottom: none !important;
 }
 .form-header-text {
   color: #fff !important;
+}
+img.logo {
+    max-height: 45px;
 }

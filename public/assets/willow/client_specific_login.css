@@ -11,22 +11,22 @@ body{
 }
 .login-logo-container img {
   width: 300px;
-  background-color: #fff;
+  background-color: #002f55;
   max-width: 100%;
 }
 .login-logo-container {
   background-image: none !important;
-  background-color: #fff !important;
+  background-color: #002f55 !important;
 }
 .site.signin-main{
   background-color: #333333
 }
 .site.signin-main .signin {
-  background-color: #2986C3;
+  background-color: #BD202E;
   transition: background-color 50ms linear;
 }
 .site.signin-main .signin:hover {
-  background-color: #1c5d86;
+  background-color: #ab0d26;
   border: 1px solid #fff;
 }
 .site.signin-main .form-header{
