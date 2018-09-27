@@ -162,6 +162,9 @@ nav .dropdown-menu > li > a{
 .panel-heading {
   padding: 33px 16px;
 }
+img.logo {
+  max-height: 45px;
+}
 
 /* Users & Settings Views */
 .row.ng-view-container{
