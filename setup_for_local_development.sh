@@ -13,5 +13,5 @@ echo "Performing basic housekeeping for a new ADM system..."
 docker-compose run web rails runner "SystemBootstrap.basic_setup"
 
 docker-compose up -d
-echo "The system is read. Please run this to setup a root user:"
+echo "The system is ready. Please run this to setup a root user:"
 echo "SystemBootstrap.create_root_user 'YOUR FIRST NAME', 'YOUR LAST NAME', 'YOUR EMAIL'"
