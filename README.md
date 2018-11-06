@@ -94,7 +94,7 @@ First time setup
 ---
 To setup your local environment to run the system, you need to run the setup script and create a root user to login with.
 1) Run `./setup_for_local_development.sh` to create a new database and prepare the system for creating the root user
-2) Create the root user: docker-compose run web rails runner "SystemBootstrap.create_root_user 'YOUR FIRST NAME', 'YOUR LAST NAME', 'YOUR EMAIL'"
+2) Follow the instructions displayed by `setup_for_local_development.sh` to setup a root user. The password for the user will be "Test1234".
 
 Wipe your local environment and start over
 ---
