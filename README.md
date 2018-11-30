@@ -85,3 +85,21 @@ At this point the system should be up and running, but no one can log into it be
 
 The system should now be fully functional. 
 
+
+
+Local Development
+===
+
+First time setup
+---
+To setup your local environment to run the system, you need to run the setup script and create a root user to login with.
+1) Run `./setup_for_local_development.sh` to create a new database and prepare the system for creating the root user
+2) Follow the instructions displayed by `setup_for_local_development.sh` to setup a root user. The password for the user will be "Test1234".
+
+Wipe your local environment and start over
+---
+If want to destroy your database and start from scratch: 
+1) Shut down the system: `docker-compose down`
+2) Delete the postgres storage folder: `rm -rf tmp/db`
+3) Follow the first time setup instructions above
+
