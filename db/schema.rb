@@ -761,16 +761,6 @@ ActiveRecord::Schema.define(version: 20160509234710) do
     t.datetime "updated_at"
   end
 
-  create_table "sis_integration_requests", force: true do |t|
-    t.text     "first_name"
-    t.text     "last_name"
-    t.text     "email"
-    t.text     "lead_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.hstore   "csv_data"
-  end
-
   create_table "site_configurations", force: true do |t|
     t.string "name"
     t.string "value"
