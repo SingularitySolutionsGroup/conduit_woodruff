@@ -14,7 +14,7 @@ unless Object.const_defined?('ClientConfiguration')
     end
 
     def self.school_name
-      'Advanced Career Institute'
+      'CDA Technical Institute'
     end
 
     def self.assets_directory
@@ -22,7 +22,7 @@ unless Object.const_defined?('ClientConfiguration')
     end
 
     def self.email_prefix
-      'advanced-career-institute-student-portal'
+      'cda-student-portal'
     end
   end
 end
