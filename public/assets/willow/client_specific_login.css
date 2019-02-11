@@ -16,17 +16,17 @@ body{
 }
 .login-logo-container {
   background-image: none !important;
-  background-color: #002f55 !important;
+  background-color: #f8ef24 !important;
 }
 .site.signin-main{
   background-color: #333333
 }
 .site.signin-main .signin {
-  background-color: #BD202E;
+  background-color: #126ab5;
   transition: background-color 50ms linear;
 }
 .site.signin-main .signin:hover {
-  background-color: #ab0d26;
+  background-color: #126ab5;
   border: 1px solid #fff;
 }
 .site.signin-main .form-header{

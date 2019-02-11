@@ -23,7 +23,7 @@ body {
 
 /* Main Navbar */
 #main-navbar {
-  background: #002f55;
+  background: #f8ef24;
   text-shadow: none !important;
 }
 #main-navbar img{
@@ -36,33 +36,33 @@ body {
   text-transform: uppercase;
 }
 #main-navbar a:hover {
-  background: #002f55;
-  color: #2986C3 !important;
+  background: #126ab5;
+  color: #000000 !important;
 }
 #main-navbar .nav > li.active > a, #main-navbar .messages > li.active > a, #main-navbar .nav > li.open > a, #main-navbar .messages > li.open > a, #main-navbar .nav > li.open > a:hover, #main-navbar .messages > li.open > a:hover {
-  background: #002f55;
-  color: #2986C3;
+  background: #f8ef24;
+  color: #126ab5;
   -webkit-box-shadow: none;
 }
 #main-navbar .nav > li > a {
-  color: #fff;
+  color: #126ab5;
   font-size: 14px;
   padding: 15px 15px 0 15px;
 }
 #main-navbar a {
-  color: #fff;
+  color: #126ab5;
   text-transform: uppercase;
 }
 .navbar-nav {
   margin: 5px;
 }
 nav .dropdown-menu {
-  background-color: #002f55;
+  background-color: #f8ef24;
   border-top: none;
-  border: solid 1px #002f55;
+  border: solid 1px #126ab5;
 }
 nav .dropdown-menu > li > a{
-  color: #fff;
+  color: #126ab5;
 }
 .navbar-nav>li>.dropdown-menu {
   margin-top: 10px;
@@ -102,8 +102,8 @@ nav .dropdown-menu > li > a{
 
 /* secondary-logo widget  */
 .widget.secondary-logo-widget {
-  background-color: #fff;
-  border: 1px solid lightgray;
+  background-color: #f8ef24;
+  border: 1px solid #126ab5;
 }
 .widget.secondary-logo-widget .box {
   border: none;
@@ -111,10 +111,10 @@ nav .dropdown-menu > li > a{
 
 /* chat */
 .blue-header-box {
-  border: 3px solid #002f55 !important;
+  border: 3px solid #126ab5 !important;
 }
 .blue-header-box h5{
-  background-color: #002f55;
+  background-color: #126ab5;
 }
 .blue-header-box .btn-warning {
   color: #fff;
@@ -126,7 +126,7 @@ nav .dropdown-menu > li > a{
   font-size: 17px;
 }
 .social-container a:hover {
-  color: #2986C3;
+  color: #126ab5;
   text-decoration: none;
 }
 .myProgress .box .application-steps{
@@ -152,7 +152,7 @@ nav .dropdown-menu > li > a{
 
 /* Forms */
 .form_header {
-  background-color: #002f55 !important;
+  background-color: #126ab5 !important;
   background-image: none !important;
   border-bottom: none !important;
 }
