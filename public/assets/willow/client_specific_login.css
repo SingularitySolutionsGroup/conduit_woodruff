@@ -7,11 +7,11 @@ h1, h2, h3, h4, h5, p, blockquote, pre, div, a, .sansHeader {
 }
 
 body{
-  background-color: #333333;
+  background-color: #f8ef24;
 }
 .login-logo-container img {
   width: 300px;
-  background-color: #002f55;
+  background-color: #f8ef24;
   max-width: 100%;
 }
 .login-logo-container {
