@@ -36,12 +36,12 @@ body {
   text-transform: uppercase;
 }
 #main-navbar a:hover {
-  background: #126ab5;
+  background: #f8ef24;
   color: #000000 !important;
 }
 #main-navbar .nav > li.active > a, #main-navbar .messages > li.active > a, #main-navbar .nav > li.open > a, #main-navbar .messages > li.open > a, #main-navbar .nav > li.open > a:hover, #main-navbar .messages > li.open > a:hover {
   background: #f8ef24;
-  color: #126ab5;
+  color: #0000;
   -webkit-box-shadow: none;
 }
 #main-navbar .nav > li > a {
