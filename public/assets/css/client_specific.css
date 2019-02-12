@@ -4,7 +4,7 @@
  }
   .form_header .logo_container {
     height: 46px;
-    background-color: #126ab5;
+    background-color: #f8ef24;
     display: inline-block;
     margin-left: 6px;
     padding-right: 8px;
@@ -17,10 +17,10 @@
     padding-left: 16px !important;
   }
   .account_activation_logo_container {
-      background-color: #126ab5;
+      background-color: #f8ef24;
   }
   .secondary-logo-container {
-    background-color: #126ab5;
+    background-color: #f8ef24;
     background-image: none !important;
     padding-left: 31px;
   }
@@ -33,17 +33,17 @@
     border-bottom-left-radius: 7px;
     height: 40px;
     display: inline-block;
-    background-color: #126ab5;
+    background-color: #f8ef24;
   }
 @media print { 
 	.form-header-text {
-		color: #ffffff !important;
+		color: #126ab5 !important;
 	}
 	.form-header-text h4 b {
-		color: #ffffff !important;
+		color: #126ab5 !important;
 	}
 	.form-header-text h4 {
-		color: #ffffff !important;
+		color: #126ab5 !important;
 		margin-right: 10px;
 	}
 
