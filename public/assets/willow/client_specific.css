@@ -23,7 +23,7 @@ body {
 
 /* Main Navbar */
 #main-navbar {
-  background: #f8ef24;
+  background: #b9bdbe;
   text-shadow: none !important;
 }
 #main-navbar img{
@@ -36,11 +36,11 @@ body {
   text-transform: uppercase;
 }
 #main-navbar a:hover {
-  background: #f8ef24;
+  background: #b9bdbe;
   color: #000000 !important;
 }
 #main-navbar .nav > li.active > a, #main-navbar .messages > li.active > a, #main-navbar .nav > li.open > a, #main-navbar .messages > li.open > a, #main-navbar .nav > li.open > a:hover, #main-navbar .messages > li.open > a:hover {
-  background: #f8ef24;
+  background: #b9bdbe;
   color: #000000;
   -webkit-box-shadow: none;
 }
