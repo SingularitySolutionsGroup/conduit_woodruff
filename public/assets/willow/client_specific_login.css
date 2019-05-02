@@ -7,26 +7,26 @@ h1, h2, h3, h4, h5, p, blockquote, pre, div, a, .sansHeader {
 }
 
 body{
-  background-color: #126ab5;
+  background-color: #094b85;
 }
 .login-logo-container img {
   width: 300px;
-  background-color: #f8ef24;
+  background-color: #b9bdbe;
   max-width: 100%;
 }
 .login-logo-container {
   background-image: none !important;
-  background-color: #126ab5 !important;
+  background-color: #094b85 !important;
 }
 .site.signin-main{
-  background-color: #126ab5;
+  background-color: #094b85;
 }
 .site.signin-main .signin {
-  background-color: #126ab5;
+  background-color: #094b85;
   transition: background-color 50ms linear;
 }
 .site.signin-main .signin:hover {
-  background-color: #126ab5;
+  background-color: #094b85;
   border: 1px solid #fff;
 }
 .site.signin-main .form-header{
