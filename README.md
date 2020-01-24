@@ -2,6 +2,7 @@ Setting a new Diamond ADM instance
 ===
 Create a client identifier
 ---
+
 We'll use this identifier throughout the rest of this guide. It should not contain spaces, and it should be lower case. It should be a unique identifier for the enterprise to identify the new client by. We'll call this CLIENT_CODE going forward.
 
 Create a new github repo for the new client's codebase
