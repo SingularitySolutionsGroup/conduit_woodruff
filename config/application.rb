@@ -14,7 +14,7 @@ unless Object.const_defined?('ClientConfiguration')
     end
 
     def self.school_name
-      'EVCC'
+      'Eastern Virginia Career College'
     end
 
     def self.assets_directory
