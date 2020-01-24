@@ -14,7 +14,7 @@ unless Object.const_defined?('ClientConfiguration')
     end
 
     def self.school_name
-      'Eastern Virginia Career College'
+      'EVCC'
     end
 
     def self.assets_directory
@@ -22,7 +22,7 @@ unless Object.const_defined?('ClientConfiguration')
     end
 
     def self.email_prefix
-      'new-charter-student-portal'
+      'evcc-student-portal'
     end
   end
 end
