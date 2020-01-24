@@ -22,7 +22,7 @@ unless Object.const_defined?('ClientConfiguration')
     end
 
     def self.email_prefix
-      'evcc-student-portal'
+      'new-charter-student-portal'
     end
   end
 end
