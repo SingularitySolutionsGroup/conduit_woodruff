@@ -2,7 +2,7 @@
 /* This will specifically target the modal, pdf and full-screen previews */
 .form_header {
   background: none !important;
-  background-color: #b9bdbe!important;
+  background-color: white!important;
   background-image: none !important;
   border-bottom: none !important;
 }

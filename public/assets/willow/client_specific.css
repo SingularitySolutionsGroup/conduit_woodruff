@@ -13,17 +13,13 @@ body {
 
 /*
   site-colors {
-  color: #05AF6B;
-  color: #2986C3;
-  color: #BD202E;
-  
-  color: #002f55;
-  color: #ab0d26;
+  color: #1a6b06;
+  color: white;
 */
 
 /* Main Navbar */
 #main-navbar {
-  background: #b9bdbe;
+  background: white;
   text-shadow: none !important;
 }
 #main-navbar img{
@@ -45,12 +41,12 @@ body {
   -webkit-box-shadow: none;
 }
 #main-navbar .nav > li > a {
-  color: #126ab5;
+  color: #1a6b06;
   font-size: 14px;
   padding: 15px 15px 0 15px;
 }
 #main-navbar a {
-  color:  #126ab5;
+  color:  #1a6b06;
   text-transform: uppercase;
 }
 .navbar-nav {
@@ -59,10 +55,10 @@ body {
 nav .dropdown-menu {
   background-color:  #b9bdbe;
   border-top: none;
-  border: solid 1px #002f55;
+  border: solid 1px #1a6b06;
 }
 nav .dropdown-menu > li > a{
-  color: #094b85;
+  color: #1a6b06;
 }
 .navbar-nav>li>.dropdown-menu {
   margin-top: 10px;
@@ -73,7 +69,7 @@ nav .dropdown-menu > li > a{
 
 /* Secondary Logo Container */
 .secondary-logo-container {
-  background-image: linear-gradient(to bottom, #126ab5, #b9bdbe);
+  background-image: linear-gradient(to bottom, #12b528, #1a6b06);
   margin: 0 auto !important;
 }
 .secondary-logo-container img{
@@ -94,7 +90,7 @@ nav .dropdown-menu > li > a{
 
 /* Application Steps */
 .badge{
-  background-color: rgba(5, 175, 107, 1);
+  background-color: #1a6b06;
 }
 .application-container {
   box-shadow: none;
@@ -111,10 +107,10 @@ nav .dropdown-menu > li > a{
 
 /* chat */
 .blue-header-box {
-  border: 3px solid #094b85 !important;
+  border: 3px solid #1a6b06 !important;
 }
 .blue-header-box h5{
-  background-color: #094b85;
+  background-color: #1a6b06;
 }
 .blue-header-box .btn-warning {
   color: #fff;
@@ -126,7 +122,7 @@ nav .dropdown-menu > li > a{
   font-size: 17px;
 }
 .social-container a:hover {
-  color: #094b85;
+  color: #1a6b06;
   text-decoration: none;
 }
 .myProgress .box .application-steps{
@@ -147,17 +143,17 @@ nav .dropdown-menu > li > a{
 /* My Docs */
 .skipped.application-steps.application-steps-first {
   border: none !important;
-  background-color: #b9bdbe;
+  background-color: White;
 }
 
 /* Forms */
 .form_header {
-  background-color: #b9bdbe !important;
+  background-color: White !important;
   background-image: none !important;
   border-bottom: none !important;
 }
 .form-header-text {
-  color: #094b85;
+  color: #1a6b06;
 }
 .panel-heading {
   padding: 33px 16px;
