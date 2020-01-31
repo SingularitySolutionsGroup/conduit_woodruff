@@ -69,7 +69,7 @@ nav .dropdown-menu > li > a{
 
 /* Secondary Logo Container */
 .secondary-logo-container {
-  background-image: linear-gradient(to bottom, #12b528, #1a6b06);
+  background-image: linear-gradient(to bottom, #1a6b06, #e3f0ed);
   margin: 0 auto !important;
 }
 .secondary-logo-container img{
