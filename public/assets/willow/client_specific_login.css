@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, p, blockquote, pre, div, a, .sansHeader {
 }
 
 body{
-  background-color: #036e40;
+  background-color: #3053b4;
 }
 .login-logo-container img {
   width: 300px;
@@ -19,14 +19,14 @@ body{
   background-color: white !important;
 }
 .site.signin-main{
-  background-color: #036e40;
+  background-color: white;
 }
 .site.signin-main .signin {
-  background-color: #036e40;
+  background-color: white;
   transition: background-color 50ms linear;
 }
 .site.signin-main .signin:hover {
-  background-color: #036e40;
+  background-color: white;
   border: 1px solid #fff;
 }
 .site.signin-main .form-header{

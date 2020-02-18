@@ -14,7 +14,7 @@ unless Object.const_defined?('ClientConfiguration')
     end
 
     def self.school_name
-      'Ayers'
+      'First Institute'
     end
 
     def self.assets_directory
@@ -22,7 +22,7 @@ unless Object.const_defined?('ClientConfiguration')
     end
 
     def self.email_prefix
-      'ayers-student-portal'
+      'first-inst-student-portal'
     end
   end
 end

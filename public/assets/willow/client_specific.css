@@ -41,12 +41,12 @@ body {
   -webkit-box-shadow: none;
 }
 #main-navbar .nav > li > a {
-  color: #1a6b06;
+  color: #3053b4;
   font-size: 14px;
   padding: 15px 15px 0 15px;
 }
 #main-navbar a {
-  color:  #1a6b06;
+  color:  #3053b4;
   text-transform: uppercase;
 }
 .navbar-nav {
@@ -55,10 +55,10 @@ body {
 nav .dropdown-menu {
   background-color:  #b9bdbe;
   border-top: none;
-  border: solid 1px #1a6b06;
+  border: solid 1px #3053b4;
 }
 nav .dropdown-menu > li > a{
-  color: #1a6b06;
+  color: #3053b4;
 }
 .navbar-nav>li>.dropdown-menu {
   margin-top: 10px;
@@ -69,7 +69,7 @@ nav .dropdown-menu > li > a{
 
 /* Secondary Logo Container */
 .secondary-logo-container {
-  background-image: linear-gradient(to bottom, #1a6b06, #e3f0ed);
+  background-image: linear-gradient(to bottom, white, #9fc4ee);
   margin: 0 auto !important;
 }
 .secondary-logo-container img{
@@ -90,7 +90,7 @@ nav .dropdown-menu > li > a{
 
 /* Application Steps */
 .badge{
-  background-color: #1a6b06;
+  background-color: white;
 }
 .application-container {
   box-shadow: none;
@@ -107,10 +107,10 @@ nav .dropdown-menu > li > a{
 
 /* chat */
 .blue-header-box {
-  border: 3px solid #1a6b06 !important;
+  border: 3px solid white !important;
 }
 .blue-header-box h5{
-  background-color: #1a6b06;
+  background-color: white;
 }
 .blue-header-box .btn-warning {
   color: #fff;
@@ -122,7 +122,7 @@ nav .dropdown-menu > li > a{
   font-size: 17px;
 }
 .social-container a:hover {
-  color: #1a6b06;
+  color: white;
   text-decoration: none;
 }
 .myProgress .box .application-steps{
@@ -153,7 +153,7 @@ nav .dropdown-menu > li > a{
   border-bottom: none !important;
 }
 .form-header-text {
-  color: #1a6b06;
+  color: #3053b4;
 }
 .panel-heading {
   padding: 33px 16px;
