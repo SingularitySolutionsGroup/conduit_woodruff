@@ -22,11 +22,11 @@ body{
   background-color: white;
 }
 .site.signin-main .signin {
-  background-color: white;
+  background-color: #3053b4;
   transition: background-color 50ms linear;
 }
 .site.signin-main .signin:hover {
-  background-color: white;
+  background-color: #3053b4;
   border: 1px solid #fff;
 }
 .site.signin-main .form-header{
