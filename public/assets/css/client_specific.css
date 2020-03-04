@@ -37,10 +37,10 @@
   }
 @media print { 
 	.form-header-text {
-		color: #126ab5 !important;
+		color: black !important;
 	}
 	.form-header-text h4 b {
-		color: #126ab5 !important;
+		color: black !important;
 	}
 	.form-header-text h4 {
 		color: black !important;
