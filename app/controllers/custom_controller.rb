@@ -17,4 +17,27 @@ class CustomController < ApplicationController
     render json: { options: options }
   end
 
+  def log action, data
+    user_id = current_refinery_user ? current_refinery_user.id : 0
+    Analytic.new.tap do |a|
+      a.user_action = action
+      a.user_id     = user_id
+      a.create_date = DateTime.now
+      a.user_agent  = request.user_agent
+      a.status      = {
+                        params: params,
+                        data:   data
+                      }.to_json
+      a.save!
+    end
+  end
+
+  def parse json
+    JSON.parse json
+  rescue
+    {}
+  end
+
+
+
 end
