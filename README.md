@@ -9,7 +9,6 @@ Create a new github repo for the new client's codebase
 ---
 Fork github.com/singularitySolutionsGroup/conduit naming it CLIENT_CODE. We're forking (or just copying conduit and then creating an upstream remote pointing at the conduit repo) so that any code changes that need to be applied to all clients can be made in the coduit repo and then pulled from upstream by each client.
 
-
 Create the necessary 3rd party sub accounts and take note of their respective api keys
 ---
 Be sure to configure the S3 bucket on the account on the filepicker configuration
