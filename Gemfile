@@ -22,7 +22,7 @@ module WillowDependencies
     gemfile.gem 'stripe'
     gemfile.gem 'three'
     gemfile.gem 'pdf-reader'
-    gemfile.gem 'filepicker-rails', '1.4.0'
+    gemfile.gem 'filepicker-rails', '2.1.0'
     gemfile.gem 'twilio-ruby'
     gemfile.gem 'whenever'
     gemfile.gem 'pdfcrowd'
@@ -110,7 +110,7 @@ module WillowDependencies
 
 end
 
-gem 'willow', git: "git@github.com:SingularitySolutionsGroup/willow.git", tag: '5.1.4'
+gem 'willow', git: "git@github.com:SingularitySolutionsGroup/willow.git", tag: '10.0.0'
 #gem 'willow', path: '~/willow'
 
 if repo = ENV['CLIENT_SPECIFIC_GEM_REPO']
