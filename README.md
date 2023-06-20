@@ -1,5 +1,5 @@
 Setting a new Diamond ADM instance
-===
+====
 Create a client identifier
 ---
 
