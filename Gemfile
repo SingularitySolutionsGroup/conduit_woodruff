@@ -12,9 +12,9 @@ module WillowDependencies
     gemfile.gem 'foreman'
     gemfile.gem 'yell'
     gemfile.gem "sentry-raven", :git => "https://github.com/getsentry/raven-ruby.git"
-    gemfile.gem 'poxa_assist', git: 'git@github.com:SingularitySolutionsGroup/poxa_assist.git', tag: '1.0.0'
+    gemfile.gem 'poxa_assist', git: 'https://github.com/SingularitySolutionsGroup/poxa_assist.git', tag: '1.0.0'
 
-    gemfile.gem 'activerecord-postgres-hstore', git: 'git@github.com:SingularitySolutionsGroup/activerecord-postgres-hstore.git'
+    gemfile.gem 'activerecord-postgres-hstore', git: 'https://github.com/SingularitySolutionsGroup/activerecord-postgres-hstore.git'
     gemfile.gem 'seam'
     gemfile.gem 'seam-active_record'
     gemfile.gem 'seam-sidekiq'
@@ -55,7 +55,7 @@ module WillowDependencies
     gemfile.gem 'pg'
     gemfile.gem 'haml', '~> 4.0.0'
     gemfile.gem 'jquery-rails', '~> 2.0.0'
-    gemfile.gem 'the_google', git: 'https://github.com/SingularitySolutionsGroup/the_google'
+    gemfile.gem 'the_google', git: 'https://github.com/darrencauthon/the_google.git'
     gemfile.gem 'browser', '1.1.0'
 
     gemfile.gem 'devise', '>= 3.0.0'
@@ -72,13 +72,13 @@ module WillowDependencies
     gemfile.gem 'truncate_html', '0.5.5'
     gemfile.gem 'warden'#, '1.1.1'
 
-    gemfile.gem 'velocify', git: 'git@github.com:SingularitySolutionsGroup/velocify.git'
+    gemfile.gem 'velocify', git: 'https://github.com/SingularitySolutionsGroup/velocify.git'
 
-    gemfile.gem 'tickle', git: 'git@github.com:SingularitySolutionsGroup/tickle.git'
+    gemfile.gem 'tickle', git: 'https://github.com/SingularitySolutionsGroup/tickle.git'
 
     gemfile.gem 'source_code'
 
-    gemfile.gem 'ajax-datatables-rails', git: 'git@github.com:SingularitySolutionsGroup/ajax-datatables-rails.git'
+    gemfile.gem 'ajax-datatables-rails', git: 'https://github.com/SingularitySolutionsGroup/ajax-datatables-rails.git'
 
     gemfile.gem 'gersion'
     gemfile.gem 'phony'
@@ -103,14 +103,14 @@ module WillowDependencies
       gemfile.gem "better_errors"
       gemfile.gem "binding_of_caller"
     end
-    gemfile.gem 'roland', git: 'git@github.com:SingularitySolutionsGroup/roland.git', tag: '1.1.6'
+    gemfile.gem 'roland', git: 'https://github.com/SingularitySolutionsGroup/roland.git', tag: '1.1.6'
     #gemfile.gem 'roland', path: '~/roland'
     gemfile.gem 'redis-session-store'
   end
 
 end
 
-gem 'willow', git: "git@github.com:SingularitySolutionsGroup/willow.git", tag: '10.0.0'
+gem 'willow', git: "https://github.com/SingularitySolutionsGroup/willow.git", tag: '10.0.0.2'
 #gem 'willow', path: '~/willow'
 
 if repo = ENV['CLIENT_SPECIFIC_GEM_REPO']

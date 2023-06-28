@@ -1,6 +1,6 @@
 GIT
-  remote: git@github.com:SingularitySolutionsGroup/activerecord-postgres-hstore.git
-  revision: 2d26a805c09647ffae9d0d4272748ba369d009b1
+  remote: https://github.com/SingularitySolutionsGroup/activerecord-postgres-hstore.git
+  revision: e0bc47b149c210f74d0e6837739463b017819fb5
   specs:
     activerecord-postgres-hstore (0.7.7)
       activerecord (>= 3.1)
@@ -8,14 +8,22 @@ GIT
       rake
 
 GIT
-  remote: git@github.com:SingularitySolutionsGroup/ajax-datatables-rails.git
+  remote: https://github.com/SingularitySolutionsGroup/ajax-datatables-rails.git
   revision: 258f4d4cca2b38ac114dab68bc751a20f3346d2c
   specs:
     ajax-datatables-rails (0.3.0)
       railties (>= 3.1)
 
 GIT
-  remote: git@github.com:SingularitySolutionsGroup/poxa_assist.git
+  remote: https://github.com/SingularitySolutionsGroup/mobile-fu.git
+  revision: 0a083460751d6a7eac261ff03f9df17eceb5ce98
+  specs:
+    mobile-fu (1.2.2)
+      rack-mobile-detect
+      rails
+
+GIT
+  remote: https://github.com/SingularitySolutionsGroup/poxa_assist.git
   revision: 6990d416b79f54beccd5b12cc44e088a68ed95ed
   tag: 1.0.0
   specs:
@@ -25,7 +33,7 @@ GIT
       ruby-hmac
 
 GIT
-  remote: git@github.com:SingularitySolutionsGroup/roland.git
+  remote: https://github.com/SingularitySolutionsGroup/roland.git
   revision: e67e29ae213710812a7aa6f7ebaa1d1178633add
   tag: 1.1.6
   specs:
@@ -34,7 +42,7 @@ GIT
       rails (>= 4.1.7)
 
 GIT
-  remote: git@github.com:SingularitySolutionsGroup/tickle.git
+  remote: https://github.com/SingularitySolutionsGroup/tickle.git
   revision: c58b570d462d2264e01a1e929182013a9f906399
   specs:
     tickle (1.0.2)
@@ -42,18 +50,18 @@ GIT
       chronic (>= 0.2.3)
 
 GIT
-  remote: git@github.com:SingularitySolutionsGroup/velocify.git
-  revision: ff3883df61ab210538ee76569aebfbf81f9ef061
+  remote: https://github.com/SingularitySolutionsGroup/velocify.git
+  revision: 7cad4fca73bc25ccae39e8abee11e44b3fecd7c8
   specs:
     velocify (0.0.1)
       activesupport
       savon
-      xml_hate (>= 2.1.0)
+      xml_hate (>= 2.0.0)
 
 GIT
-  remote: git@github.com:SingularitySolutionsGroup/willow.git
-  revision: be8ec6d12b61b1541e58299f0c3e5759e00d7b4c
-  tag: 10.0.0
+  remote: https://github.com/SingularitySolutionsGroup/willow.git
+  revision: 2bfc252560be8b3cdbfb77b57963849811707031
+  tag: 10.0.0.2
   specs:
     willow (0.9.0)
       activerecord-postgres-hstore
@@ -78,16 +86,8 @@ GIT
       will_paginate
 
 GIT
-  remote: https://github.com/SingularitySolutionsGroup/mobile-fu.git
-  revision: 0a083460751d6a7eac261ff03f9df17eceb5ce98
-  specs:
-    mobile-fu (1.2.2)
-      rack-mobile-detect
-      rails
-
-GIT
-  remote: https://github.com/SingularitySolutionsGroup/the_google
-  revision: 04454b73a623695e6919f15a4dd2de4909afcc80
+  remote: https://github.com/darrencauthon/the_google.git
+  revision: 72c6e29c851152f338680711c5fd02957edd53df
   specs:
     the_google (0.0.1)
       activesupport
@@ -242,7 +242,7 @@ GEM
     haml (4.0.5)
       tilt
     hashery (2.1.1)
-    hashie (3.4.6)
+    hashie (3.6.0)
     hike (1.2.3)
     hitimes (1.2.4)
     htmlentities (4.3.2)
@@ -326,9 +326,9 @@ GEM
       mini_portile (~> 0.6.0)
     nori (1.1.5)
     ntlm-http (0.1.1)
-    oauth2 (1.4.0)
-      faraday (>= 0.8, < 0.13)
-      jwt (~> 1.0)
+    oauth2 (1.4.8)
+      faraday (>= 0.8, < 3.0)
+      jwt (>= 1.0, < 3.0)
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
@@ -407,6 +407,7 @@ GEM
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
     retriable (1.4.1)
+    rexml (3.2.5)
     routing-filter (0.3.1)
       actionpack
     ruby-hmac (0.4.0)
@@ -472,7 +473,7 @@ GEM
       sprockets (>= 2.8, < 4.0)
     stripe (1.58.0)
       rest-client (>= 1.4, < 4.0)
-    strong_password (0.0.5)
+    strong_password (0.0.10)
     subtle (1.2.0)
       blankslate
     systemu (2.6.4)
@@ -485,7 +486,7 @@ GEM
     timecop (0.7.1)
     timers (4.1.2)
       hitimes
-    tinymce-rails (4.7.9)
+    tinymce-rails (4.9.11)
       railties (>= 3.1.1)
     tinymce-rails-imageupload (4.0.17.beta.3)
       railties (>= 3.2, < 6)
@@ -526,6 +527,7 @@ GEM
       chronic (>= 0.6.3)
     will_paginate (3.1.5)
     xml-simple (1.1.5)
+      rexml
     xml_hate (2.1.0)
       activesupport
       hashie
@@ -554,7 +556,7 @@ DEPENDENCIES
   dragonfly (= 0.9.15)
   ekg
   eventmachine
-  filepicker-rails (= 1.4.0)
+  filepicker-rails (= 2.1.0)
   foreman
   friendly_id (>= 4.0.9)
   gersion
