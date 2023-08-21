@@ -60,10 +60,10 @@ GIT
 
 GIT
   remote: https://github.com/SingularitySolutionsGroup/willow.git
-  revision: 2bfc252560be8b3cdbfb77b57963849811707031
-  tag: 10.0.0.2
+  revision: 344061033c6a3d50868977b75ddb596774381623
+  tag: 10.0.4
   specs:
-    willow (0.9.0)
+    willow (10.0.4)
       activerecord-postgres-hstore
       browser
       filepicker-rails (>= 1.0.0)
