@@ -99,7 +99,7 @@ module WillowDependencies
     end
 
     gemfile.group :development do
-      gemfile.gem 'meta_request'
+      # gemfile.gem 'meta_request'
       gemfile.gem "better_errors"
       gemfile.gem "binding_of_caller"
     end

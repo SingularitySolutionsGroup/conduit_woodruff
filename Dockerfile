@@ -1,5 +1,5 @@
-FROM quay.io/ssgadmin/conduit_base:master
-ENV BUNDLE_GITHUB__COM=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:x-oauth-basic
+FROM 089140149962.dkr.ecr.us-east-1.amazonaws.com/conduit_base:latest
+ENV BUNDLE_GITHUB__COM=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:x-oauth-basic
 RUN mkdir /home/app/phantomjs-2.1.1-linux-x86_64
 COPY ./phantomjs-2.1.1-linux-x86_64 /home/app/phantomjs-2.1.1-linux-x86_64/.
 RUN ls /home/app/
