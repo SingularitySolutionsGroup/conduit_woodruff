@@ -11,7 +11,7 @@ module WillowDependencies
     gemfile.gem 'savon', '~> 1.2.0'
     gemfile.gem 'foreman'
     gemfile.gem 'yell'
-    gemfile.gem "sentry-raven", :git => "https://github.com/getsentry/raven-ruby.git"
+    # gemfile.gem "sentry-raven", :git => "https://github.com/getsentry/raven-ruby.git"
     gemfile.gem 'poxa_assist', git: 'https://github.com/SingularitySolutionsGroup/poxa_assist.git', tag: '1.0.0'
 
     gemfile.gem 'activerecord-postgres-hstore', git: 'https://github.com/SingularitySolutionsGroup/activerecord-postgres-hstore.git'
@@ -31,7 +31,8 @@ module WillowDependencies
     gemfile.gem 'eventmachine'
     gemfile.gem 'aws-sdk'
     gemfile.gem 'httparty'
-    gemfile.gem 'mechanize'
+    gemfile.gem 'mechanize', '2.0'
+    # gemfile.gem 'mechanize'
     gemfile.gem 'will_paginate', '~> 3.0'
     gemfile.gem 'mandrill-api'
     gemfile.gem 'htmlentities'
