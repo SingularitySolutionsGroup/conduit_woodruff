@@ -1,0 +1,9 @@
+sudo docker build -t conduit-woodruff-dev .
+
+docker run -it --rm -v /var/run/docker.sock:/var/run/docker.sock --entrypoint=/bin/bash conduit-woodruff-dev
+
+cd woodruff/production/
+
+docker build -t conduit_woodruff .
+docker tag conduit_woodruff:latest techdiamondsis/conduit_woodruff:latest
+docker push techdiamondsis/conduit_woodruff:latest
