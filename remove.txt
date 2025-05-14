@@ -1,0 +1,3 @@
+docker build -t conduit_woodruff .
+docker tag conduit_woodruff:latest techdiamondsis/conduit_woodruff:latest
+docker push techdiamondsis/conduit_woodruff:latest
